@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitycrops:mutton_diamond"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitysdelight:mutton_chops_diamond"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

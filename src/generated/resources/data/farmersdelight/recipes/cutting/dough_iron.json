@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitycrops:dough_iron"
+    }
+  ],
+  "result": [
+    {
+      "item": "qualitysdelight:raw_pasta_iron"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

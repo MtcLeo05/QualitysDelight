@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "farmersdelight:rice",
+              "weight": 70
+            },
+            {
+              "type": "minecraft:item",
+              "name": "qualitysdelight:rice_iron",
+              "weight": 15
+            },
+            {
+              "type": "minecraft:item",
+              "name": "qualitysdelight:rice_gold",
+              "weight": 10
+            },
+            {
+              "type": "minecraft:item",
+              "name": "qualitysdelight:rice_diamond",
+              "weight": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ]
+}

@@ -16,7 +16,7 @@ public class DelightCreativeTab {
     public static final CreativeModeTab ITEMS = new CreativeModeTab( "qualitysdelight_items") {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(getItemFromID("qualitysdelight:tomato_iron", DelightItems.QUALITY_DELIGHT));
+            return new ItemStack(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT));
         }
 
         @Override

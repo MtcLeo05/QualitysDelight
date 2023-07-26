@@ -14,9 +14,7 @@ import net.minecraft.world.item.*;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.common.FoodValues;
-import vectorwing.farmersdelight.common.registry.ModItems;
 
-import java.util.List;
 import java.util.Objects;
 
 public class DelightItems {
@@ -359,18 +357,17 @@ public class DelightItems {
 
     //I TRIED TO AUTOMATE THIS BUT WASN'T ABLE TO...
     public static void register(IEventBus eventBus){
-        registerExistingQuality("cabbage", QUALITY_DELIGHT);
-        registerExistingQuality("tomato", QUALITY_DELIGHT);
-        registerExistingQuality("onion", QUALITY_DELIGHT);
         registerExistingQuality("rice_panicle", QUALITY_DELIGHT);
         registerExistingQuality("rice", QUALITY_DELIGHT);
+        registerExistingQualityFood("cabbage", QUALITY_DELIGHT, FoodValues.CABBAGE, false);
+        registerExistingQualityFood("tomato", QUALITY_DELIGHT, FoodValues.TOMATO, false);
+        registerExistingQualityFood("onion", QUALITY_DELIGHT, FoodValues.ONION, false);
         registerExistingQualityFood("fried_egg", QUALITY_DELIGHT, FoodValues.FRIED_EGG, false);
         registerExistingQualityFood("minced_beef", QUALITY_DELIGHT, FoodValues.MINCED_BEEF, false);
         registerExistingQualityFood("bacon", QUALITY_DELIGHT, FoodValues.BACON, false);
         registerExistingQualityFood("cod_slice", QUALITY_DELIGHT, FoodValues.COD_SLICE, false);
         registerExistingQualityFood("salmon_slice", QUALITY_DELIGHT, FoodValues.SALMON_SLICE, false);
         registerExistingQualityFood("mutton_chops", QUALITY_DELIGHT, FoodValues.MUTTON_CHOP, false);
-        registerExistingQualityFood("ham", QUALITY_DELIGHT, FoodValues.HAM, false);
         registerExistingQualityFoodWithOneEffect("raw_pasta", QUALITY_DELIGHT, FoodValues.RAW_PASTA, MobEffects.HUNGER, 600, 0, 0.3f);
         registerExistingQualityFoodWithOneEffect("chicken_cuts", QUALITY_DELIGHT, FoodValues.CHICKEN_CUTS, MobEffects.HUNGER, 600, 0, 0.3f);
 

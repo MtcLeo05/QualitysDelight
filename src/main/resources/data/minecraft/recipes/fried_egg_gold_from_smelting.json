@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "qualitycrops:egg_gold"
+  },
+  "result": "qualitysdelight:fried_egg_gold"
+}

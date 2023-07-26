@@ -1,6 +1,7 @@
 package com.mtcleo05.qualitysdelight.datagen;
 
 import com.mtcleo05.qualitycrops.QualityCrops;
+import com.mtcleo05.qualitysdelight.QualitysDelight;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -9,7 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.io.IOException;
 
-@Mod.EventBusSubscriber(modid = QualityCrops.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = QualitysDelight.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
 
     @SubscribeEvent
@@ -19,7 +20,6 @@ public class DataGenerators {
 
         gen.addProvider(true, new ModRecipeProvider(gen));
         gen.addProvider(true, new ModLanguageProvider(gen, "en_us"));
-        gen.addProvider(true, new ModItemModelProvider(gen, efh));
 
         try {
             gen.run();
