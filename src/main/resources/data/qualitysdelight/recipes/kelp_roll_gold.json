@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "qualitycrops:carrot_gold"
+    },
+    "K": {
+      "item": "qualitycrops:dried_kelp_gold"
+    },
+    "R": {
+      "item": "qualitysdelight:cooked_rice_gold"
+    }
+  },
+  "pattern": [
+    "RCR",
+    "KKK"
+  ],
+  "result": {
+    "item": "qualitysdelight:kelp_roll_gold"
+  }
+}

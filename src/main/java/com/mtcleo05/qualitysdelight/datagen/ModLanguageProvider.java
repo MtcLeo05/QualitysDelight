@@ -28,11 +28,9 @@ public class ModLanguageProvider extends LanguageProvider {
 
         newItems.forEach(item -> {
             if(item instanceof QualityItem){
-                this.add(item,cTC(removeQualityID(getItemName(item)))
-                );
+                this.add(item,cTC(removeQualityID(getItemName(item))));
             }else if(item instanceof QualityBowlFoodItem){
-                this.add(item, cTC(removeQualityID(getItemName(item)))
-                );
+                this.add(item, cTC(removeQualityID(getItemName(item))));
             }else{
                 this.add(item, cTC(getItemName(item)));
             }

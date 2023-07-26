@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:tomato_gold"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    [
+      {
+        "tag": "forge:gold/cooked_beef"
+      },
+      {
+        "tag": "forge:gold/cooked_pork"
+      },
+      {
+        "tag": "forge:gold/cooked_chicken"
+      },
+      {
+        "tag": "forge:gold/cooked_mutton"
+      },
+      {
+        "tag": "forge:gold/cooked_fishes"
+      },
+      {
+        "item": "qualitycrops:cooked_rabbit_gold"
+      }
+    ],
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:barbecue_stick_gold"
+  }
+}

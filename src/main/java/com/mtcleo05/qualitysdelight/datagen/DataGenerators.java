@@ -7,6 +7,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import vectorwing.farmersdelight.data.BlockTags;
 
 import java.io.IOException;
 
@@ -17,9 +18,11 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent event){
         DataGenerator gen = event.getGenerator();
         ExistingFileHelper efh = event.getExistingFileHelper();
+        BlockTags blockTags = new BlockTags(gen, "qualitysdelight", efh);
 
         gen.addProvider(true, new ModRecipeProvider(gen));
         gen.addProvider(true, new ModLanguageProvider(gen, "en_us"));
+        gen.addProvider(true, new ModItemTagProvider(gen, blockTags, efh));
 
         try {
             gen.run();

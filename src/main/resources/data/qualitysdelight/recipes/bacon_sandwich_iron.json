@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_iron"
+    },
+    {
+      "item": "qualitysdelight:bacon_iron"
+    },
+    {
+      "tag": "forge:iron/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:tomato_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:bacon_sandwich_iron"
+  }
+}

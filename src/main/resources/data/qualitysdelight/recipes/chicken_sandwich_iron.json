@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_iron"
+    },
+    {
+      "tag": "forge:iron/cooked_chicken"
+    },
+    {
+      "tag": "forge:iron/crops/cabbage"
+    },
+    {
+      "item": "qualitycrops:carrot_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:chicken_sandwich_iron"
+  }
+}

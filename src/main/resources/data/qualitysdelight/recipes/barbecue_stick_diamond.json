@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    },
+    [
+      {
+        "tag": "forge:diamond/cooked_beef"
+      },
+      {
+        "tag": "forge:diamond/cooked_pork"
+      },
+      {
+        "tag": "forge:diamond/cooked_chicken"
+      },
+      {
+        "tag": "forge:diamond/cooked_mutton"
+      },
+      {
+        "tag": "forge:diamond/cooked_fishes"
+      },
+      {
+        "item": "qualitycrops:cooked_rabbit_diamond"
+      }
+    ],
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:barbecue_stick_diamond"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:apple_gold"
+    },
+    {
+      "item": "qualitycrops:melon_slice_gold"
+    },
+    {
+      "item": "qualitycrops:melon_slice_gold"
+    },
+    {
+      "tag": "forge:berries"
+    },
+    {
+      "tag": "forge:berries"
+    },
+    {
+      "item": "farmersdelight:pumpkin_slice"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fruit_salad_gold"
+  }
+}

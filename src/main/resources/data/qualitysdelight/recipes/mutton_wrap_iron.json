@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_iron"
+    },
+    {
+      "tag": "forge:iron/cooked_mutton"
+    },
+    {
+      "tag": "forge:iron/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:mutton_wrap_iron"
+  }
+}

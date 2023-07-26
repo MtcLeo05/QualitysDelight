@@ -1,0 +1,44 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredients": [
+    [
+      {
+        "item": "qualitycrops:chicken_diamond"
+      },
+      {
+        "item": "qualitysdelight:chicken_cuts_diamond"
+      }
+    ],
+    {
+      "item": "qualitycrops:carrot_diamond"
+    },
+    {
+      "tag": "forge:diamond/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:carrot_diamond"
+      },
+      {
+        "item": "qualitycrops:potato_diamond"
+      },
+      {
+        "item": "qualitycrops:beetroot_diamond"
+      },
+      {
+        "item": "qualitysdelight:onion_diamond"
+      },
+      {
+        "item": "qualitysdelight:tomato_diamond"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:chicken_soup_diamond"
+  }
+}

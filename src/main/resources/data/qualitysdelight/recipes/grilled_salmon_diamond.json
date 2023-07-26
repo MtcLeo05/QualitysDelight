@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:diamond/cooked_fishes/salmon"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "forge:diamond/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:grilled_salmon_diamond"
+  }
+}

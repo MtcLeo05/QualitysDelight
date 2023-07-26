@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:ice"
+    },
+    "M": {
+      "item": "qualitycrops:melon_slice_iron"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " MM",
+    "IMM",
+    "SI "
+  ],
+  "result": {
+    "item": "qualitysdelight:melon_popsicle_iron"
+  }
+}

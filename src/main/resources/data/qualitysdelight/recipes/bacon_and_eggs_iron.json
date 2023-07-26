@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:bacon_iron"
+    },
+    {
+      "item": "qualitysdelight:bacon_iron"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:fried_egg_iron"
+    },
+    {
+      "item": "qualitysdelight:fried_egg_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:bacon_and_eggs_iron"
+  }
+}

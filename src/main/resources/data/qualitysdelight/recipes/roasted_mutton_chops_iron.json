@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_mutton_chops_iron"
+    },
+    {
+      "item": "qualitycrops:beetroot_iron"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_iron"
+    },
+    {
+      "item": "qualitysdelight:tomato_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:roasted_mutton_chops_iron"
+  }
+}

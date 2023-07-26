@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_mutton_chops_gold"
+    },
+    {
+      "item": "qualitycrops:beetroot_gold"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_gold"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:roasted_mutton_chops_gold"
+  }
+}

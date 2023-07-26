@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_diamond"
+    },
+    {
+      "tag": "forge:diamond/cooked_chicken"
+    },
+    {
+      "tag": "forge:diamond/crops/cabbage"
+    },
+    {
+      "item": "qualitycrops:carrot_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:chicken_sandwich_diamond"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_mutton_chops_diamond"
+    },
+    {
+      "item": "qualitycrops:beetroot_diamond"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_diamond"
+    },
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:roasted_mutton_chops_diamond"
+  }
+}

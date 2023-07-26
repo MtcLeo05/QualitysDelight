@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:baked_potato_gold"
+    },
+    {
+      "tag": "forge:gold/cooked_beef"
+    },
+    {
+      "tag": "forge:milk"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_potato_gold"
+  }
+}

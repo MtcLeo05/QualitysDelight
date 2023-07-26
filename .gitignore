@@ -1,5 +1,10 @@
 # User-specific stuff
 .idea/
+.gradle/
+build/
+gradle/
+run/
+run-data/
 
 *.iml
 *.ipr

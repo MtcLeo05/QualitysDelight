@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_gold"
+    },
+    {
+      "item": "qualitysdelight:bacon_gold"
+    },
+    {
+      "tag": "forge:gold/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:bacon_sandwich_gold"
+  }
+}

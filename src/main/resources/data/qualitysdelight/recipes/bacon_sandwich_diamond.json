@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_diamond"
+    },
+    {
+      "item": "qualitysdelight:bacon_diamond"
+    },
+    {
+      "tag": "forge:diamond/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:bacon_sandwich_diamond"
+  }
+}
