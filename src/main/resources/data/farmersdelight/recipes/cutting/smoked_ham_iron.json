@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:smoked_ham_iron"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitycrops:cooked_porkchop_iron"
+    },
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

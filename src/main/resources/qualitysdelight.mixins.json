@@ -5,7 +5,9 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "QualitysDelight.refmap.json",
   "mixins": [
-    "TomatoVineMixin"
+    "TomatoVineMixin",
+    "PropelplantBerryCaneMixin",
+    "PropelplantBerryStemMixin"
   ],
   "client": [
   ],

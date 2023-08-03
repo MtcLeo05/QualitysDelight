@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:pumpkin_slice"
+    },
+    {
+      "tag": "forge:gold/crops/cabbage"
+    },
+    {
+      "tag": "forge:gold/raw_pork"
+    },
+    {
+      "tag": "forge:milk"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:pumpkin_soup_gold"
+  }
+}

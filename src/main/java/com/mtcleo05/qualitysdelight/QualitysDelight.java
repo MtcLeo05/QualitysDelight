@@ -1,7 +1,10 @@
 package com.mtcleo05.qualitysdelight;
 
 import com.mojang.logging.LogUtils;
+import com.mtcleo05.qualitysdelight.block.DelightBlocks;
 import com.mtcleo05.qualitysdelight.item.DelightItems;
+import com.mtcleo05.qualitysdelight.integration.ModIntegrationCheck;
+import com.mtcleo05.qualitysdelight.loot.DelightLootModifiers;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -9,7 +12,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -24,13 +26,14 @@ public class QualitysDelight {
 
     public QualitysDelight() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        modEventBus.addListener(this::commonSetup);
+
+        DelightBlocks.register(modEventBus);
         DelightItems.register(modEventBus);
+        DelightLootModifiers.register(modEventBus);
+
+        ModIntegrationCheck.preInit(modEventBus);
+
         MinecraftForge.EVENT_BUS.register(this);
-    }
-
-    private void commonSetup(final FMLCommonSetupEvent event) {
-
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

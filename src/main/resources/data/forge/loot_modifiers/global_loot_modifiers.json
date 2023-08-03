@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "entries": [
+    "qualitysdelight:quality_loin_from_hoglin",
+    "qualitysdelight:quality_sirloin_from_hoglin",
+    "qualitysdelight:quality_strider_slice_from_strider_machete",
+    "qualitysdelight:quality_strider_slice_from_strider_knife",
+    "qualitysdelight:quality_ham_from_hoglin_machete",
+    "qualitysdelight:quality_ham_from_hoglin_knife",
+    "qualitysdelight:quality_ham_from_pig_machete",
+    "qualitysdelight:quality_ham_from_pig_knife",
+    "qualitysdelight:quality_smoked_ham_from_hoglin_machete",
+    "qualitysdelight:quality_smoked_ham_from_hoglin_knife",
+    "qualitysdelight:quality_smoked_ham_from_pig_machete",
+    "qualitysdelight:quality_smoked_ham_from_pig_knife"
+  ]
+}

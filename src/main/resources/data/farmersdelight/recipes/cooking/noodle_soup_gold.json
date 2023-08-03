@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:raw_pasta_gold"
+    },
+    {
+      "item": "qualitysdelight:fried_egg_gold"
+    },
+    {
+      "item": "qualitycrops:dried_kelp_gold"
+    },
+    {
+      "tag": "forge:gold/raw_pork"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:noodle_soup_gold"
+  }
+}

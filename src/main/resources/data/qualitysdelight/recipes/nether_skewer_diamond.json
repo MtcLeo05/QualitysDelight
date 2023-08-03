@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "qualitysdelight:propelpearl_diamond"
+    },
+    "R": {
+      "item": "minecraft:blaze_rod"
+    },
+    "S": [
+      {
+        "item": "qualitysdelight:ground_strider_diamond"
+      },
+      {
+        "item": "qualitysdelight:strider_slice_diamond"
+      }
+    ]
+  },
+  "pattern": [
+    "PS",
+    "R "
+  ],
+  "result": {
+    "item": "qualitysdelight:nether_skewer_diamond"
+  }
+}

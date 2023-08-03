@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitycrops:baked_potato_diamond"
+    },
+    {
+      "item": "qualitycrops:rabbit_diamond"
+    },
+    {
+      "item": "qualitycrops:carrot_diamond"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitycrops:rabbit_stew_diamond"
+  }
+}

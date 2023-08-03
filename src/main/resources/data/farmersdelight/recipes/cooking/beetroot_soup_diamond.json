@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitycrops:beetroot_diamond"
+    },
+    {
+      "item": "qualitycrops:beetroot_diamond"
+    },
+    {
+      "item": "qualitycrops:beetroot_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitycrops:beetroot_soup_diamond"
+  }
+}

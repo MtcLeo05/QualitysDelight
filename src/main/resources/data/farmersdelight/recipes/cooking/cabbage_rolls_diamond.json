@@ -1,0 +1,69 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 300,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "tag": "forge:diamond/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:potato_diamond"
+      },
+      {
+        "item": "qualitycrops:carrot_diamond"
+      },
+      {
+        "item": "qualitycrops:beetroot_diamond"
+      },
+      {
+        "item": "qualitycrops:beef_diamond"
+      },
+      {
+        "item": "qualitycrops:porkchop_diamond"
+      },
+      {
+        "item": "qualitycrops:chicken_diamond"
+      },
+      {
+        "item": "qualitycrops:mutton_diamond"
+      },
+      {
+        "item": "qualitycrops:egg_diamond"
+      },
+      {
+        "item": "qualitycrops:tropical_fish_diamond"
+      },
+      {
+        "item": "qualitycrops:salmon_diamond"
+      },
+      {
+        "item": "qualitycrops:cod_diamond"
+      },
+      {
+        "item": "qualitysdelight:minced_beef_diamond"
+      },
+      {
+        "item": "qualitysdelight:chicken_cuts_diamond"
+      },
+      {
+        "item": "qualitysdelight:bacon_diamond"
+      },
+      {
+        "item": "qualitysdelight:mutton_chops_diamond"
+      },
+      {
+        "item": "qualitysdelight:salmon_slice_diamond"
+      },
+      {
+        "item": "qualitysdelight:cod_slice_diamond"
+      },
+      {
+        "item": "qualitysdelight:hoglin_loin_diamond"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:cabbage_rolls_diamond"
+  }
+}

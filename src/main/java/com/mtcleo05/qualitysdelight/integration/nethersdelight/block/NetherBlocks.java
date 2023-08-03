@@ -1,0 +1,86 @@
+package com.mtcleo05.qualitysdelight.integration.nethersdelight.block;
+
+import com.mtcleo05.qualitycrops.rarities.ModRarities;
+import com.mtcleo05.qualitysdelight.QualitysDelight;
+import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherCreativeTab;
+import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
+import com.mtcleo05.qualitysdelight.item.DelightCreativeTab;
+import com.mtcleo05.qualitysdelight.item.DelightItems;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Objects;
+import java.util.function.Supplier;
+
+public class NetherBlocks {
+
+    public static final DeferredRegister<Block> DELIGHT_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, QualitysDelight.MODID);
+
+    public static void registerQualityBlock(String id, BlockBehaviour blockBehaviour){
+        registerBlock(id + "_iron", () ->
+                new IronStuffedHoglinBlock(
+                        BlockBehaviour.Properties.copy(blockBehaviour)
+                ),
+                ModRarities.IRON
+                );
+
+        registerBlock(id + "_gold", () ->
+                new GoldStuffedHoglinBlock(
+                        BlockBehaviour.Properties.copy(blockBehaviour)
+                ),
+                ModRarities.GOLD
+        );
+
+        registerBlock(id + "_diamond", () ->
+                new DiamondStuffedHoglinBlock(
+                        BlockBehaviour.Properties.copy(blockBehaviour)
+                ),
+                ModRarities.DIAMOND);
+    }
+
+    private static <T extends Block> void registerBlock(String name, Supplier<T> block, Rarity rarity){
+        RegistryObject<T> toReturn = DELIGHT_BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn, rarity);
+    }
+
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block, Rarity rarity){
+        NetherItems.NETHER_QUALITY.register(name, () -> new BlockItem(block.get(), new Item.Properties()
+                .rarity(rarity)
+                .tab(NetherCreativeTab.NETHER_ITEMS)));
+    }
+
+
+    public static void register(IEventBus eventBus){
+
+        registerQualityBlock("stuffed_hoglin", Blocks.CAKE);
+
+        DELIGHT_BLOCKS.register(eventBus);
+    }
+
+
+    private static String getItemName(Item item){
+        return Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(item)).getPath();
+    }
+
+    public static Item getItemFromID(String id, DeferredRegister<Item> register){
+        Iterable<Item> items = register.getEntries().stream().map(RegistryObject::get)::iterator;
+
+        for (Item item : items) {
+            if (getItemName(item).equals(id)) {
+                return item;
+            }
+        }
+
+        return Items.BARRIER;
+    }
+
+}

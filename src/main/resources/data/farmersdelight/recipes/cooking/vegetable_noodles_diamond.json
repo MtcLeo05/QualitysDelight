@@ -1,0 +1,45 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitycrops:carrot_diamond"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_diamond"
+    },
+    {
+      "item": "qualitysdelight:raw_pasta_diamond"
+    },
+    {
+      "tag": "forge:diamond/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:carrot_diamond"
+      },
+      {
+        "item": "qualitycrops:potato_diamond"
+      },
+      {
+        "item": "qualitycrops:potato_diamond"
+      },
+      {
+        "item": "qualitysdelight:tomato_diamond"
+      },
+      {
+        "item": "qualitysdelight:cabbage_diamond"
+      },
+      {
+        "item": "qualitysdelight:onion_diamond"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:vegetable_noodles_diamond"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitycrops:dough_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "tag": "forge:iron/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:potato_iron"
+      },
+      {
+        "item": "qualitycrops:carrot_iron"
+      },
+      {
+        "item": "qualitycrops:beetroot_iron"
+      },
+      {
+        "item": "qualitycrops:beef_iron"
+      },
+      {
+        "item": "qualitycrops:porkchop_iron"
+      },
+      {
+        "item": "qualitycrops:chicken_iron"
+      },
+      {
+        "item": "qualitycrops:mutton_iron"
+      },
+      {
+        "item": "qualitycrops:brown_mushroom_iron"
+      },
+      {
+        "item": "qualitysdelight:minced_beef_iron"
+      },
+      {
+        "item": "qualitysdelight:chicken_cuts_iron"
+      },
+      {
+        "item": "qualitysdelight:bacon_iron"
+      },
+      {
+        "item": "qualitysdelight:mutton_chops_iron"
+      }
+    ]
+  ],
+  "result": {
+    "count": 2,
+    "item": "qualitysdelight:dumplings_iron"
+  }
+}

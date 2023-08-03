@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nethersdelight:item/stuffed_hoglin",
+    "layer1": "qualitycrops:item/diamond_overlay"
+  }
+}

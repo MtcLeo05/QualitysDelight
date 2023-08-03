@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:ham_gold"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitycrops:porkchop_gold"
+    },
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

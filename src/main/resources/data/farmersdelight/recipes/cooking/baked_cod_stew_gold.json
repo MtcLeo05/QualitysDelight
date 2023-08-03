@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:gold/raw_fishes/cod"
+    },
+    {
+      "item": "qualitycrops:potato_gold"
+    },
+    {
+      "item": "qualitycrops:egg_gold"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:baked_cod_stew_gold"
+  }
+}

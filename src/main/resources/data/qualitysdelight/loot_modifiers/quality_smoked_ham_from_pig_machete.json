@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "farmersdelight:smoked_ham"
+      ]
+    }
+  ],
+  "type": "qualitysdelight:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "killer",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "tag": "nethersdelight:tools/machetes"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:pig",
+        "flags": {
+          "is_on_fire": true
+        }
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:smoked_ham_iron",
+  "goldItem": "qualitysdelight:smoked_ham_gold",
+  "diamondItem": "qualitysdelight:smoked_ham_diamond"
+}

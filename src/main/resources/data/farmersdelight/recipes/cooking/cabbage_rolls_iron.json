@@ -1,0 +1,69 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 300,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "tag": "forge:iron/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:potato_iron"
+      },
+      {
+        "item": "qualitycrops:carrot_iron"
+      },
+      {
+        "item": "qualitycrops:beetroot_iron"
+      },
+      {
+        "item": "qualitycrops:beef_iron"
+      },
+      {
+        "item": "qualitycrops:porkchop_iron"
+      },
+      {
+        "item": "qualitycrops:chicken_iron"
+      },
+      {
+        "item": "qualitycrops:mutton_iron"
+      },
+      {
+        "item": "qualitycrops:egg_iron"
+      },
+      {
+        "item": "qualitycrops:tropical_fish_iron"
+      },
+      {
+        "item": "qualitycrops:salmon_iron"
+      },
+      {
+        "item": "qualitycrops:cod_iron"
+      },
+      {
+        "item": "qualitysdelight:minced_beef_iron"
+      },
+      {
+        "item": "qualitysdelight:chicken_cuts_iron"
+      },
+      {
+        "item": "qualitysdelight:bacon_iron"
+      },
+      {
+        "item": "qualitysdelight:mutton_chops_iron"
+      },
+      {
+        "item": "qualitysdelight:salmon_slice_iron"
+      },
+      {
+        "item": "qualitysdelight:cod_slice_iron"
+      },
+      {
+        "item": "qualitysdelight:hoglin_loin_iron"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:cabbage_rolls_iron"
+  }
+}

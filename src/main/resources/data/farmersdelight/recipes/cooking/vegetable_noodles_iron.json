@@ -1,0 +1,45 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitycrops:carrot_iron"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_iron"
+    },
+    {
+      "item": "qualitysdelight:raw_pasta_iron"
+    },
+    {
+      "tag": "forge:iron/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:carrot_iron"
+      },
+      {
+        "item": "qualitycrops:potato_iron"
+      },
+      {
+        "item": "qualitycrops:potato_iron"
+      },
+      {
+        "item": "qualitysdelight:tomato_iron"
+      },
+      {
+        "item": "qualitysdelight:cabbage_iron"
+      },
+      {
+        "item": "qualitysdelight:onion_iron"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:vegetable_noodles_iron"
+  }
+}

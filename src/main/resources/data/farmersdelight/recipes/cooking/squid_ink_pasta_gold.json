@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:gold/raw_fishes"
+    },
+    {
+      "item": "qualitysdelight:raw_pasta_gold"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    },
+    {
+      "item": "minecraft:ink_sac"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:squid_ink_pasta_gold"
+  }
+}

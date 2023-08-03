@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "farmersdelight:ham"
+      ]
+    }
+  ],
+  "type": "qualitysdelight:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "killer",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "tag": "farmersdelight:tools/knives"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:pig",
+        "flags": {
+          "is_on_fire": false
+        }
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:ham_iron",
+  "goldItem": "qualitysdelight:ham_gold",
+  "diamondItem": "qualitysdelight:ham_diamond"
+}

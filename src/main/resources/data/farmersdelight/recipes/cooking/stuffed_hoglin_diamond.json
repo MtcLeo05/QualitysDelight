@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "farmersdelight:nether_salad"
+    },
+    {
+      "item": "qualitysdelight:raw_stuffed_hoglin_diamond"
+    },
+    {
+      "item": "farmersdelight:nether_salad"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_hoglin_diamond"
+  }
+}

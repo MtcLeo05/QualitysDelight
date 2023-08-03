@@ -1,10 +1,9 @@
 package com.mtcleo05.qualitysdelight.datagen;
 
-import com.mtcleo05.qualitycrops.items.ModCrops;
-import com.mtcleo05.qualitycrops.items.ModItems;
 import com.mtcleo05.qualitycrops.quality.QualityBowlFoodItem;
 import com.mtcleo05.qualitycrops.quality.QualityItem;
 import com.mtcleo05.qualitysdelight.QualitysDelight;
+import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
 import com.mtcleo05.qualitysdelight.item.DelightItems;
 import com.mtcleo05.qualitysdelight.tags.ModTags;
 import net.minecraft.core.Registry;
@@ -54,6 +53,27 @@ public class ModItemTagProvider extends ItemTagsProvider {
             }
         });
 
+        newItems = NetherItems.NETHER_QUALITY.getEntries().stream().map(RegistryObject::get)::iterator;
+
+        newItems.forEach(item -> {
+            if(item instanceof QualityItem qualityItem){
+                if(qualityItem.cropQuality == 1){
+                    this.tag(ModTags.QUALITY_IRON).add(item);
+                }else if(qualityItem.cropQuality == 2){
+                    this.tag(ModTags.QUALITY_GOLD).add(item);
+                }else{
+                    this.tag(ModTags.QUALITY_DIAMOND).add(item);
+                }
+            }else if(item instanceof QualityBowlFoodItem qualityItem){
+                if(qualityItem.cropQuality == 1){
+                    this.tag(ModTags.QUALITY_IRON).add(item);
+                }else if(qualityItem.cropQuality == 2){
+                    this.tag(ModTags.QUALITY_GOLD).add(item);
+                }else{
+                    this.tag(ModTags.QUALITY_DIAMOND).add(item);
+                }
+            }
+        });
 
 /*
         this.tag(ModTags.IRON_COOKED_BACON).add(getItemFromID("cooked_bacon_iron", DelightItems.QUALITY_DELIGHT));
@@ -74,10 +94,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         this.tag(ModTags.IRON_COOKED_MUTTON).add(getItemFromID("cooked_mutton_chops_iron", DelightItems.QUALITY_DELIGHT));
         this.tag(ModTags.GOLD_COOKED_MUTTON).add(getItemFromID("cooked_mutton_chops_gold", DelightItems.QUALITY_DELIGHT));
         this.tag(ModTags.DIAMOND_COOKED_MUTTON).add(getItemFromID("cooked_mutton_chops_diamond", DelightItems.QUALITY_DELIGHT));
-        this.tag(ModTags.IRON_COOKED_PORK).add(getItemFromID("cooked_bacon_iron", DelightItems.QUALITY_DELIGHT));
-        this.tag(ModTags.GOLD_COOKED_PORK).add(getItemFromID("cooked_bacon_gold", DelightItems.QUALITY_DELIGHT));
-        this.tag(ModTags.DIAMOND_COOKED_PORK).add(getItemFromID("cooked_bacon_diamond", DelightItems.QUALITY_DELIGHT));
-        
+
         this.tag(ModTags.IRON_SALAD_INGREDIENTS).add(getItemFromID("cabbage_iron", DelightItems.QUALITY_DELIGHT));
         this.tag(ModTags.GOLD_SALAD_INGREDIENTS).add(getItemFromID("cabbage_gold", DelightItems.QUALITY_DELIGHT));
         this.tag(ModTags.DIAMOND_SALAD_INGREDIENTS).add(getItemFromID("cabbage_diamond", DelightItems.QUALITY_DELIGHT));
@@ -97,6 +114,25 @@ public class ModItemTagProvider extends ItemTagsProvider {
         this.tag(ModTags.GOLD_COOKED_SALMON).add(getItemFromID("cooked_salmon_gold", ModItems.VANILLA_QUALITY));
         this.tag(ModTags.DIAMOND_COOKED_SALMON).add(getItemFromID("salmon_slice_diamond", DelightItems.QUALITY_DELIGHT));
         this.tag(ModTags.DIAMOND_COOKED_SALMON).add(getItemFromID("cooked_salmon_diamond", ModItems.VANILLA_QUALITY));
+
+        this.tag(ModTags.IRON_RAW_PORK).add(getItemFromID("bacon_iron", DelightItems.QUALITY_DELIGHT));
+        this.tag(ModTags.GOLD_RAW_PORK).add(getItemFromID("bacon_gold", DelightItems.QUALITY_DELIGHT));
+        this.tag(ModTags.DIAMOND_RAW_PORK).add(getItemFromID("bacon_diamond", DelightItems.QUALITY_DELIGHT));
+
+        this.tag(ModTags.IRON_RAW_FISHES).add(getItemFromID("cod_slice_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("salmon_slice_iron", DelightItems.QUALITY_DELIGHT));
+
+        this.tag(ModTags.GOLD_RAW_FISHES).add(getItemFromID("cod_slice_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("salmon_slice_gold", DelightItems.QUALITY_DELIGHT));
+
+        this.tag(ModTags.DIAMOND_RAW_FISHES).add(getItemFromID("cod_slice_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("salmon_slice_diamond", DelightItems.QUALITY_DELIGHT));
+
+        this.tag(ModTags.IRON_RAW_COD).add(getItemFromID("cod_slice_iron", DelightItems.QUALITY_DELIGHT));
+        this.tag(ModTags.IRON_RAW_SALMON).add(getItemFromID("salmon_slice_iron", DelightItems.QUALITY_DELIGHT));
+
+        this.tag(ModTags.GOLD_RAW_COD).add(getItemFromID("cod_slice_gold", DelightItems.QUALITY_DELIGHT));
+        this.tag(ModTags.GOLD_RAW_SALMON).add(getItemFromID("salmon_slice_gold", DelightItems.QUALITY_DELIGHT));
+
+        this.tag(ModTags.DIAMOND_RAW_COD).add(getItemFromID("cod_slice_diamond", DelightItems.QUALITY_DELIGHT));
+        this.tag(ModTags.DIAMOND_RAW_SALMON).add(getItemFromID("salmon_slice_diamond", DelightItems.QUALITY_DELIGHT));
 
  */
     }

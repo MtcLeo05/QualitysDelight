@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "nethersdelight:strider_slice"
+      ]
+    }
+  ],
+  "type": "qualitysdelight:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "killer",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "tag": "nethersdelight:tools/machetes"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:strider",
+        "flags": {
+          "is_on_fire": false
+        }
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:strider_slice_iron",
+  "goldItem": "qualitysdelight:strider_slice_gold",
+  "diamondItem": "qualitysdelight:strider_slice_diamond"
+}

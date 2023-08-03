@@ -1,7 +1,10 @@
 package com.mtcleo05.qualitysdelight.datagen;
 
 import com.mtcleo05.qualitycrops.items.ModCrops;
-import com.mtcleo05.qualitycrops.items.ModItems;
+import com.mtcleo05.qualitycrops.quality.QualityItem;
+import com.mtcleo05.qualitysdelight.QualitysDelight;
+import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
+import com.mtcleo05.qualitysdelight.item.DelightFoods;
 import com.mtcleo05.qualitysdelight.item.DelightItems;
 import com.mtcleo05.qualitysdelight.tags.ModTags;
 import net.minecraft.data.DataGenerator;
@@ -14,14 +17,19 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import umpaz.nethersdelight.common.registry.NDItems;
+import vectorwing.farmersdelight.FarmersDelight;
+import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
 
+import java.awt.*;
 import java.util.Objects;
 import java.util.function.Consumer;
 
@@ -602,9 +610,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .addIngredient(ModTags.IRON_SALAD_INGREDIENTS)
                 .unlockedBy("hasCarrot", has(getItemFromID("carrot_iron", ModCrops.CROPS)))
                 .build(pFinishedRecipeConsumer);
- */
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("tomato_sauce_gold", DelightItems.QUALITY_DELIGHT), 1, 300, 0.35f, Items.BOWL)
+                CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("tomato_sauce_gold", DelightItems.QUALITY_DELIGHT), 1, 300, 0.35f, Items.BOWL)
                 .addIngredient(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
                 .addIngredient(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
                 .unlockedBy("hasTomato", has(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT)))
@@ -674,6 +681,790 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .addIngredient(getItemFromID("beetroot_diamond", ModCrops.CROPS))
                 .addIngredient(ModTags.DIAMOND_SALAD_INGREDIENTS)
                 .unlockedBy("hasCarrot", has(getItemFromID("carrot_diamond", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+                CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("fish_stew_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(ModTags.IRON_RAW_FISHES)
+                .addIngredient(getItemFromID("tomato_sauce_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasRawFish", has(ModTags.IRON_RAW_FISHES))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("fried_rice_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(getItemFromID("rice_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("egg_iron", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("carrot_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasEgg", has(getItemFromID("egg_iron", ModItems.VANILLA_QUALITY)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pumpkin_soup_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get())
+                .addIngredient(ModTags.IRON_SALAD_INGREDIENTS)
+                .addIngredient(ModTags.IRON_RAW_PORK)
+                .addIngredient(ForgeTags.MILK)
+                .unlockedBy("hasPumpkinSlice", has(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get()))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("baked_cod_stew_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(ModTags.IRON_RAW_COD)
+                .addIngredient(getItemFromID("potato_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("egg_iron", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasCod", has(ModTags.IRON_RAW_COD))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("noodle_soup_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(getItemFromID("raw_pasta_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("fried_egg_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("dried_kelp_iron", ModItems.VANILLA_QUALITY))
+                .addIngredient(ModTags.IRON_RAW_PORK)
+                .unlockedBy("hasPasta", has(getItemFromID("raw_pasta", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("fish_stew_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(ModTags.GOLD_RAW_FISHES)
+                .addIngredient(getItemFromID("tomato_sauce_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasRawFishes", has(ModTags.GOLD_RAW_FISHES))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("fried_rice_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(getItemFromID("rice_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("egg_gold", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("carrot_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasEgg", has(getItemFromID("egg_gold", ModItems.VANILLA_QUALITY)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pumpkin_soup_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get())
+                .addIngredient(ModTags.GOLD_SALAD_INGREDIENTS)
+                .addIngredient(ModTags.GOLD_RAW_PORK)
+                .addIngredient(ForgeTags.MILK)
+                .unlockedBy("hasPumpkinSlice", has(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get()))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("baked_cod_stew_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(ModTags.GOLD_RAW_COD)
+                .addIngredient(getItemFromID("potato_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("egg_gold", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasCod", has(ModTags.GOLD_RAW_COD))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("noodle_soup_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(getItemFromID("raw_pasta_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("fried_egg_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("dried_kelp_gold", ModItems.VANILLA_QUALITY))
+                .addIngredient(ModTags.GOLD_RAW_PORK)
+                .unlockedBy("hasPasta", has(getItemFromID("raw_pasta", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("fish_stew_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(ModTags.DIAMOND_RAW_FISHES)
+                .addIngredient(getItemFromID("tomato_sauce_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasRawFishes", has(ModTags.DIAMOND_RAW_FISHES))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("fried_rice_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(getItemFromID("rice_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("egg_diamond", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("carrot_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasEgg", has(getItemFromID("egg_diamond", ModItems.VANILLA_QUALITY)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pumpkin_soup_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get())
+                .addIngredient(ModTags.DIAMOND_SALAD_INGREDIENTS)
+                .addIngredient(ModTags.DIAMOND_RAW_PORK)
+                .addIngredient(ForgeTags.MILK)
+                .unlockedBy("hasPumpkinSlice", has(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get()))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("baked_cod_stew_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(ModTags.DIAMOND_RAW_COD)
+                .addIngredient(getItemFromID("potato_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("egg_diamond", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasCod", has(ModTags.DIAMOND_RAW_COD))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("noodle_soup_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1.0f, Items.BOWL)
+                .addIngredient(getItemFromID("raw_pasta_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("fried_egg_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("dried_kelp_diamond", ModItems.VANILLA_QUALITY))
+                .addIngredient(ModTags.DIAMOND_RAW_PORK)
+                .unlockedBy("hasPasta", has(getItemFromID("raw_pasta", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+                CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pasta_with_meatballs_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("minced_beef_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("raw_pasta_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_sauce_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasMincedBeef", has(getItemFromID("minced_beef_iron", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pasta_with_mutton_chop_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("mutton_chops_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_iron", ModItems.VANILLA_QUALITY)))
+                .addIngredient(getItemFromID("raw_pasta_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_sauce_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasMuttonChops", has(getItemFromID("mutton_chops_iron", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("mushroom_rice_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("brown_mushroom_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("red_mushroom_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("rice_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(Ingredient.of(getItemFromID("carrot_iron", ModCrops.CROPS), getItemFromID("potato_iron", ModCrops.CROPS)))
+                .unlockedBy("hasRice", has(getItemFromID("rice_iron", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("vegetable_noodles_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("carrot_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("raw_pasta_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(ModTags.IRON_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("carrot_iron", ModCrops.CROPS), getItemFromID("potato_iron", ModCrops.CROPS), getItemFromID("potato_iron", ModCrops.CROPS), getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasPasta", has(getItemFromID("raw_pasta_iron", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("ratatouille_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("beetroot_iron", ModCrops.CROPS))
+                .addIngredient(Ingredient.of(getItemFromID("carrot_iron", ModCrops.CROPS), getItemFromID("potato_iron", ModCrops.CROPS), getItemFromID("potato_iron", ModCrops.CROPS), getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasTomato", has(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("squid_ink_pasta_iron", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(ModTags.IRON_RAW_FISHES)
+                .addIngredient(getItemFromID("raw_pasta_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(Items.INK_SAC)
+                .unlockedBy("hasInk", has(Items.INK_SAC))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pasta_with_meatballs_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("minced_beef_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("raw_pasta_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_sauce_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasMincedBeef", has(getItemFromID("minced_beef_gold", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pasta_with_mutton_chop_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("mutton_chops_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_gold", ModItems.VANILLA_QUALITY)))
+                .addIngredient(getItemFromID("raw_pasta_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_sauce_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasMuttonChops", has(getItemFromID("mutton_chops_gold", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("mushroom_rice_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("brown_mushroom_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("red_mushroom_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("rice_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(Ingredient.of(getItemFromID("carrot_gold", ModCrops.CROPS), getItemFromID("potato_gold", ModCrops.CROPS)))
+                .unlockedBy("hasRice", has(getItemFromID("rice_gold", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("vegetable_noodles_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("carrot_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("raw_pasta_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(ModTags.GOLD_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("carrot_gold", ModCrops.CROPS), getItemFromID("potato_gold", ModCrops.CROPS), getItemFromID("potato_gold", ModCrops.CROPS), getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasPasta", has(getItemFromID("raw_pasta_gold", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("ratatouille_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("beetroot_gold", ModCrops.CROPS))
+                .addIngredient(Ingredient.of(getItemFromID("carrot_gold", ModCrops.CROPS), getItemFromID("potato_gold", ModCrops.CROPS), getItemFromID("potato_gold", ModCrops.CROPS), getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasTomato", has(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("squid_ink_pasta_gold", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(ModTags.GOLD_RAW_FISHES)
+                .addIngredient(getItemFromID("raw_pasta_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(Items.INK_SAC)
+                .unlockedBy("hasInk", has(Items.INK_SAC))
+                .build(pFinishedRecipeConsumer);
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pasta_with_meatballs_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("minced_beef_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("raw_pasta_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_sauce_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasMincedBeef", has(getItemFromID("minced_beef_diamond", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("pasta_with_mutton_chop_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("mutton_chops_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_diamond", ModItems.VANILLA_QUALITY)))
+                .addIngredient(getItemFromID("raw_pasta_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_sauce_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasMuttonChops", has(getItemFromID("mutton_chops_diamond", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("mushroom_rice_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("brown_mushroom_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("red_mushroom_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("rice_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(Ingredient.of(getItemFromID("carrot_diamond", ModCrops.CROPS), getItemFromID("potato_diamond", ModCrops.CROPS)))
+                .unlockedBy("hasRice", has(getItemFromID("rice_diamond", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("vegetable_noodles_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("carrot_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("raw_pasta_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(ModTags.DIAMOND_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("carrot_diamond", ModCrops.CROPS), getItemFromID("potato_diamond", ModCrops.CROPS), getItemFromID("potato_diamond", ModCrops.CROPS), getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasPasta", has(getItemFromID("raw_pasta_diamond", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("ratatouille_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("beetroot_diamond", ModCrops.CROPS))
+                .addIngredient(Ingredient.of(getItemFromID("carrot_diamond", ModCrops.CROPS), getItemFromID("potato_diamond", ModCrops.CROPS), getItemFromID("potato_diamond", ModCrops.CROPS), getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasTomato", has(getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("squid_ink_pasta_diamond", DelightItems.QUALITY_DELIGHT), 1, 600, 1f, Items.BOWL)
+                .addIngredient(ModTags.DIAMOND_RAW_FISHES)
+                .addIngredient(getItemFromID("raw_pasta_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(Items.INK_SAC)
+                .unlockedBy("hasInk", has(Items.INK_SAC))
+                .build(pFinishedRecipeConsumer);
+
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("dumplings_iron", DelightItems.QUALITY_DELIGHT), 2, 600, 1f)
+                .addIngredient(getItemFromID("dough_iron", ModItems.NEW_ITEMS))
+                .addIngredient(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(ModTags.IRON_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("potato_iron", ModCrops.CROPS), getItemFromID("carrot_iron", ModCrops.CROPS), getItemFromID("beetroot_iron", ModCrops.CROPS),
+                        getItemFromID("beef_iron", ModItems.VANILLA_QUALITY), getItemFromID("porkchop_iron", ModItems.VANILLA_QUALITY), getItemFromID("chicken_iron", ModItems.VANILLA_QUALITY),
+                        getItemFromID("mutton_iron", ModItems.VANILLA_QUALITY), getItemFromID("brown_mushroom_iron", ModCrops.CROPS),
+                        getItemFromID("minced_beef_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_iron", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("bacon_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_iron", DelightItems.QUALITY_DELIGHT)
+                ))
+                .unlockedBy("hasCabbage", has(ModTags.IRON_SALAD_INGREDIENTS))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("beetroot_soup_iron", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("beetroot_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("beetroot_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("beetroot_iron", ModCrops.CROPS))
+                .unlockedBy("hasBeetroot", has(getItemFromID("beetroot_iron", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("mushroom_stew_iron", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("brown_mushroom_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("red_mushroom_iron", ModCrops.CROPS))
+                .unlockedBy("hasMushroom", has(getItemFromID("red_mushroom_iron", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("rabbit_stew_iron", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("baked_potato_iron", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("rabbit_iron", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("carrot_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_iron", ModCrops.CROPS))
+                .unlockedBy("hasMushroom", has(getItemFromID("red_mushroom_iron", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("dumplings_gold", DelightItems.QUALITY_DELIGHT), 2, 600, 1f)
+                .addIngredient(getItemFromID("dough_gold", ModItems.NEW_ITEMS))
+                .addIngredient(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(ModTags.GOLD_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("potato_gold", ModCrops.CROPS), getItemFromID("carrot_gold", ModCrops.CROPS), getItemFromID("beetroot_gold", ModCrops.CROPS),
+                        getItemFromID("beef_gold", ModItems.VANILLA_QUALITY), getItemFromID("porkchop_gold", ModItems.VANILLA_QUALITY), getItemFromID("chicken_gold", ModItems.VANILLA_QUALITY),
+                        getItemFromID("mutton_gold", ModItems.VANILLA_QUALITY), getItemFromID("brown_mushroom_gold", ModCrops.CROPS),
+                        getItemFromID("minced_beef_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_gold", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("bacon_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_gold", DelightItems.QUALITY_DELIGHT)
+                ))
+                .unlockedBy("hasCabbage", has(ModTags.GOLD_SALAD_INGREDIENTS))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("beetroot_soup_gold", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("beetroot_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("beetroot_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("beetroot_gold", ModCrops.CROPS))
+                .unlockedBy("hasBeetroot", has(getItemFromID("beetroot_gold", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("mushroom_stew_gold", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("brown_mushroom_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("red_mushroom_gold", ModCrops.CROPS))
+                .unlockedBy("hasMushroom", has(getItemFromID("red_mushroom_gold", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("rabbit_stew_gold", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("baked_potato_gold", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("rabbit_gold", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("carrot_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_gold", ModCrops.CROPS))
+                .unlockedBy("hasMushroom", has(getItemFromID("red_mushroom_gold", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("dumplings_diamond", DelightItems.QUALITY_DELIGHT), 2, 600, 1f)
+                .addIngredient(getItemFromID("dough_diamond", ModItems.NEW_ITEMS))
+                .addIngredient(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(ModTags.DIAMOND_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("potato_diamond", ModCrops.CROPS), getItemFromID("carrot_diamond", ModCrops.CROPS), getItemFromID("beetroot_diamond", ModCrops.CROPS),
+                        getItemFromID("beef_diamond", ModItems.VANILLA_QUALITY), getItemFromID("porkchop_diamond", ModItems.VANILLA_QUALITY), getItemFromID("chicken_diamond", ModItems.VANILLA_QUALITY),
+                        getItemFromID("mutton_diamond", ModItems.VANILLA_QUALITY), getItemFromID("brown_mushroom_diamond", ModCrops.CROPS),
+                        getItemFromID("minced_beef_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_diamond", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("bacon_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_diamond", DelightItems.QUALITY_DELIGHT)
+                ))
+                .unlockedBy("hasCabbage", has(ModTags.DIAMOND_SALAD_INGREDIENTS))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("beetroot_soup_diamond", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("beetroot_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("beetroot_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("beetroot_diamond", ModCrops.CROPS))
+                .unlockedBy("hasBeetroot", has(getItemFromID("beetroot_diamond", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("mushroom_stew_diamond", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("brown_mushroom_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("red_mushroom_diamond", ModCrops.CROPS))
+                .unlockedBy("hasMushroom", has(getItemFromID("red_mushroom_diamond", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("rabbit_stew_diamond", ModItems.VANILLA_QUALITY), 1, 600, 1f, Items.BOWL)
+                .addIngredient(getItemFromID("baked_potato_diamond", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("rabbit_diamond", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("carrot_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_diamond", ModCrops.CROPS))
+                .unlockedBy("hasMushroom", has(getItemFromID("red_mushroom_diamond", ModCrops.CROPS)))
+                .build(pFinishedRecipeConsumer);
+
+                ShapelessRecipeBuilder.shapeless(getItemFromID("roast_chicken_block_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("egg_iron", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("bread_iron", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("carrot_iron", ModCrops.CROPS))
+                .requires(getItemFromID("cooked_chicken_iron", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("baked_potato_iron", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("carrot_iron", ModCrops.CROPS))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("baked_potato_iron", ModItems.VANILLA_QUALITY))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("stuffed_pumpkin_block_iron", DelightItems.QUALITY_DELIGHT), 1, 20, 2.0f, Items.PUMPKIN)
+                .addIngredient(getItemFromID("rice_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("brown_mushroom_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("potato_iron", ModCrops.CROPS))
+                .addIngredient(ForgeTags.BERRIES)
+                .addIngredient(Ingredient.of(getItemFromID("carrot_iron", ModCrops.CROPS), getItemFromID("potato_iron", ModCrops.CROPS), getItemFromID("beetroot_iron", ModCrops.CROPS), getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasBerries", has(ForgeTags.BERRIES))
+                .build(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("shepherds_pie_block_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("baked_potato_iron", ModItems.VANILLA_QUALITY))
+                .requires(ForgeTags.MILK)
+                .requires(getItemFromID("baked_potato_iron", ModItems.VANILLA_QUALITY))
+                .requires(ModTags.IRON_COOKED_MUTTON)
+                .requires(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("rice_roll_medley_block_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(DelightItems.KELP_ROLL_SLICE[0].get())
+                .requires(DelightItems.KELP_ROLL_SLICE[0].get())
+                .requires(DelightItems.KELP_ROLL_SLICE[0].get())
+                .requires(DelightItems.SALMON_ROLL[0].get())
+                .requires(DelightItems.SALMON_ROLL[0].get())
+                .requires(DelightItems.SALMON_ROLL[0].get())
+                .requires(DelightItems.COD_ROLL[0].get())
+                .requires(Items.BOWL)
+                .requires(DelightItems.COD_ROLL[0].get())
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("roast_chicken_block_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("egg_gold", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("bread_gold", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("carrot_gold", ModCrops.CROPS))
+                .requires(getItemFromID("cooked_chicken_gold", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("baked_potato_gold", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("carrot_gold", ModCrops.CROPS))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("baked_potato_gold", ModItems.VANILLA_QUALITY))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("stuffed_pumpkin_block_gold", DelightItems.QUALITY_DELIGHT), 1, 20, 2.0f, Items.PUMPKIN)
+                .addIngredient(getItemFromID("rice_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("brown_mushroom_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("potato_gold", ModCrops.CROPS))
+                .addIngredient(ForgeTags.BERRIES)
+                .addIngredient(Ingredient.of(getItemFromID("carrot_gold", ModCrops.CROPS), getItemFromID("potato_gold", ModCrops.CROPS), getItemFromID("beetroot_gold", ModCrops.CROPS), getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasBerries", has(ForgeTags.BERRIES))
+                .build(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("shepherds_pie_block_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("baked_potato_gold", ModItems.VANILLA_QUALITY))
+                .requires(ForgeTags.MILK)
+                .requires(getItemFromID("baked_potato_gold", ModItems.VANILLA_QUALITY))
+                .requires(ModTags.GOLD_COOKED_MUTTON)
+                .requires(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("rice_roll_medley_block_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(DelightItems.KELP_ROLL_SLICE[1].get())
+                .requires(DelightItems.KELP_ROLL_SLICE[1].get())
+                .requires(DelightItems.KELP_ROLL_SLICE[1].get())
+                .requires(DelightItems.SALMON_ROLL[1].get())
+                .requires(DelightItems.SALMON_ROLL[1].get())
+                .requires(DelightItems.SALMON_ROLL[1].get())
+                .requires(DelightItems.COD_ROLL[1].get())
+                .requires(Items.BOWL)
+                .requires(DelightItems.COD_ROLL[1].get())
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("roast_chicken_block_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("egg_diamond", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("bread_diamond", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("carrot_diamond", ModCrops.CROPS))
+                .requires(getItemFromID("cooked_chicken_diamond", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("baked_potato_diamond", ModItems.VANILLA_QUALITY))
+                .requires(getItemFromID("carrot_diamond", ModCrops.CROPS))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("baked_potato_diamond", ModItems.VANILLA_QUALITY))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("stuffed_pumpkin_block_diamond", DelightItems.QUALITY_DELIGHT), 1, 20, 2.0f, Items.PUMPKIN)
+                .addIngredient(getItemFromID("rice_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("brown_mushroom_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("potato_diamond", ModCrops.CROPS))
+                .addIngredient(ForgeTags.BERRIES)
+                .addIngredient(Ingredient.of(getItemFromID("carrot_diamond", ModCrops.CROPS), getItemFromID("potato_diamond", ModCrops.CROPS), getItemFromID("beetroot_diamond", ModCrops.CROPS), getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("cabbage_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT)))
+                .unlockedBy("hasBerries", has(ForgeTags.BERRIES))
+                .build(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("shepherds_pie_block_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("baked_potato_diamond", ModItems.VANILLA_QUALITY))
+                .requires(ForgeTags.MILK)
+                .requires(getItemFromID("baked_potato_diamond", ModItems.VANILLA_QUALITY))
+                .requires(ModTags.DIAMOND_COOKED_MUTTON)
+                .requires(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("rice_roll_medley_block_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(DelightItems.KELP_ROLL_SLICE[2].get())
+                .requires(DelightItems.KELP_ROLL_SLICE[2].get())
+                .requires(DelightItems.KELP_ROLL_SLICE[2].get())
+                .requires(DelightItems.SALMON_ROLL[2].get())
+                .requires(DelightItems.SALMON_ROLL[2].get())
+                .requires(DelightItems.SALMON_ROLL[2].get())
+                .requires(DelightItems.COD_ROLL[2].get())
+                .requires(Items.BOWL)
+                .requires(DelightItems.COD_ROLL[2].get())
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        simpleCookingRecipe(pFinishedRecipeConsumer, "smoking", RecipeSerializer.SMOKING_RECIPE, 200, getItemFromID("ham_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("smoked_ham_iron", DelightItems.QUALITY_DELIGHT), 0.35F);
+        simpleCookingRecipe(pFinishedRecipeConsumer, "smoking", RecipeSerializer.SMOKING_RECIPE, 200, getItemFromID("ham_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("smoked_ham_gold", DelightItems.QUALITY_DELIGHT), 0.35F);
+        simpleCookingRecipe(pFinishedRecipeConsumer, "smoking", RecipeSerializer.SMOKING_RECIPE, 200, getItemFromID("ham_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("smoked_ham_diamond", DelightItems.QUALITY_DELIGHT), 0.35F);
+
+        simpleQualityFoodRecipe("hoglin_loin", NetherItems.NETHER_QUALITY, "hoglin_sirloin", NetherItems.NETHER_QUALITY, pFinishedRecipeConsumer);
+
+        simpleQualityCuttingRecipeVanillaAddition("ham", DelightItems.QUALITY_DELIGHT, "porkchop", ModItems.VANILLA_QUALITY, 2, Items.BONE, 1, pFinishedRecipeConsumer);
+        simpleQualityCuttingRecipeVanillaAddition("smoked_ham", DelightItems.QUALITY_DELIGHT, "cooked_porkchop", ModItems.VANILLA_QUALITY, 2, Items.BONE, 1, pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("honey_glazed_ham_block_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.SWEET_BERRIES)
+                .requires(Items.HONEY_BOTTLE)
+                .requires(Items.SWEET_BERRIES)
+                .requires(Items.SWEET_BERRIES)
+                .requires(getItemFromID("ham_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.SWEET_BERRIES)
+                .requires(getItemFromID("cooked_rice_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("cooked_rice_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("honey_glazed_ham_block_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.SWEET_BERRIES)
+                .requires(Items.HONEY_BOTTLE)
+                .requires(Items.SWEET_BERRIES)
+                .requires(Items.SWEET_BERRIES)
+                .requires(getItemFromID("ham_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.SWEET_BERRIES)
+                .requires(getItemFromID("cooked_rice_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("cooked_rice_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("honey_glazed_ham_block_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.SWEET_BERRIES)
+                .requires(Items.HONEY_BOTTLE)
+                .requires(Items.SWEET_BERRIES)
+                .requires(Items.SWEET_BERRIES)
+                .requires(getItemFromID("ham_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.SWEET_BERRIES)
+                .requires(getItemFromID("cooked_rice_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(Items.BOWL)
+                .requires(getItemFromID("cooked_rice_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("cabbage_rolls_iron", DelightItems.QUALITY_DELIGHT), 1, 300, 0.35f)
+                .addIngredient(ModTags.IRON_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("potato_iron", ModCrops.CROPS), getItemFromID("carrot_iron", ModCrops.CROPS), getItemFromID("beetroot_iron", ModCrops.CROPS),
+                        getItemFromID("beef_iron", ModItems.VANILLA_QUALITY), getItemFromID("porkchop_iron", ModItems.VANILLA_QUALITY), getItemFromID("chicken_iron", ModItems.VANILLA_QUALITY),
+                        getItemFromID("mutton_iron", ModItems.VANILLA_QUALITY), getItemFromID("egg_iron", ModItems.VANILLA_QUALITY), getItemFromID("tropical_fish_iron", ModItems.VANILLA_QUALITY),
+                        getItemFromID("salmon_iron", ModItems.VANILLA_QUALITY), getItemFromID("cod_iron", ModItems.VANILLA_QUALITY),
+                        getItemFromID("minced_beef_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_iron", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("bacon_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_iron", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("salmon_slice_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("cod_slice_iron", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("hoglin_loin_iron", NetherItems.NETHER_QUALITY)
+                ))
+                .unlockedBy("hasCabbage", has(ModTags.IRON_SALAD_INGREDIENTS))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("cabbage_rolls_gold", DelightItems.QUALITY_DELIGHT), 1, 300, 0.35f)
+                .addIngredient(ModTags.GOLD_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("potato_gold", ModCrops.CROPS), getItemFromID("carrot_gold", ModCrops.CROPS), getItemFromID("beetroot_gold", ModCrops.CROPS),
+                        getItemFromID("beef_gold", ModItems.VANILLA_QUALITY), getItemFromID("porkchop_gold", ModItems.VANILLA_QUALITY), getItemFromID("chicken_gold", ModItems.VANILLA_QUALITY),
+                        getItemFromID("mutton_gold", ModItems.VANILLA_QUALITY), getItemFromID("egg_gold", ModItems.VANILLA_QUALITY), getItemFromID("tropical_fish_gold", ModItems.VANILLA_QUALITY),
+                        getItemFromID("salmon_gold", ModItems.VANILLA_QUALITY), getItemFromID("cod_gold", ModItems.VANILLA_QUALITY),
+                        getItemFromID("minced_beef_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_gold", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("bacon_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_gold", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("salmon_slice_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("cod_slice_gold", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("hoglin_loin_gold", NetherItems.NETHER_QUALITY)
+                ))
+                .unlockedBy("hasCabbage", has(ModTags.GOLD_SALAD_INGREDIENTS))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("cabbage_rolls_diamond", DelightItems.QUALITY_DELIGHT), 1, 300, 0.35f)
+                .addIngredient(ModTags.DIAMOND_SALAD_INGREDIENTS)
+                .addIngredient(Ingredient.of(getItemFromID("potato_diamond", ModCrops.CROPS), getItemFromID("carrot_diamond", ModCrops.CROPS), getItemFromID("beetroot_diamond", ModCrops.CROPS),
+                        getItemFromID("beef_diamond", ModItems.VANILLA_QUALITY), getItemFromID("porkchop_diamond", ModItems.VANILLA_QUALITY), getItemFromID("chicken_diamond", ModItems.VANILLA_QUALITY),
+                        getItemFromID("mutton_diamond", ModItems.VANILLA_QUALITY), getItemFromID("egg_diamond", ModItems.VANILLA_QUALITY), getItemFromID("tropical_fish_diamond", ModItems.VANILLA_QUALITY),
+                        getItemFromID("salmon_diamond", ModItems.VANILLA_QUALITY), getItemFromID("cod_diamond", ModItems.VANILLA_QUALITY),
+                        getItemFromID("minced_beef_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_diamond", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("bacon_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_diamond", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("salmon_slice_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("cod_slice_diamond", DelightItems.QUALITY_DELIGHT),
+                        getItemFromID("hoglin_loin_diamond", NetherItems.NETHER_QUALITY)
+                ))
+                .unlockedBy("hasCabbage", has(ModTags.DIAMOND_SALAD_INGREDIENTS))
+                .build(pFinishedRecipeConsumer);
+
+            simpleQualityCuttingRecipe("strider_slice", NetherItems.NETHER_QUALITY, "ground_strider", NetherItems.NETHER_QUALITY, 2, pFinishedRecipeConsumer);
+
+            ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_iron", NetherItems.NETHER_QUALITY))
+                .define('W', Items.WARPED_ROOTS)
+                .define('C', Items.CRIMSON_ROOTS)
+                .define('F', Items.CRIMSON_FUNGUS)
+                .define('L', getItemFromID("hoglin_loin_iron", NetherItems.NETHER_QUALITY))
+                .define('H', NDItems.HOGLIN_HIDE.get())
+                .define('h', getItemFromID("ham_iron", DelightItems.QUALITY_DELIGHT))
+                .define('S', ModItems.NETHER_SALAD.get())
+                .pattern("WFC")
+                .pattern("LHL")
+                .pattern("hSh")
+                .unlockedBy("hasHide", has(NDItems.HOGLIN_HIDE.get()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_iron", NetherItems.NETHER_QUALITY))
+                .define('P', getItemFromID("propelpearl_iron", NetherItems.NETHER_QUALITY))
+                .define('R', Items.BLAZE_ROD)
+                .define('S', Ingredient.of(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", NetherItems.NETHER_QUALITY)))
+                .pattern("PS")
+                .pattern("R ")
+                .unlockedBy("hasRod", has(Items.BLAZE_ROD))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_iron", NetherItems.NETHER_QUALITY))
+                .requires(Items.WARPED_ROOTS)
+                .requires(Items.WARPED_ROOTS)
+                .requires(getItemFromID("hoglin_sirloin_iron", NetherItems.NETHER_QUALITY))
+                .requires(Items.BOWL)
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_iron", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", NetherItems.NETHER_QUALITY)))
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Items.CRIMSON_FUNGUS)
+                .addIngredient(Items.WARPED_ROOTS)
+                .addIngredient(Items.CRIMSON_ROOTS)
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_iron", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Items.CRIMSON_FUNGUS)
+                .addIngredient(Items.CRIMSON_ROOTS)
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", NetherItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_iron", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(getItemFromID("propelpearl_iron", NetherItems.NETHER_QUALITY))
+                .build(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_gold", NetherItems.NETHER_QUALITY))
+                .define('W', Items.WARPED_ROOTS)
+                .define('C', Items.CRIMSON_ROOTS)
+                .define('F', Items.CRIMSON_FUNGUS)
+                .define('L', getItemFromID("hoglin_loin_gold", NetherItems.NETHER_QUALITY))
+                .define('H', NDItems.HOGLIN_HIDE.get())
+                .define('h', getItemFromID("ham_gold", DelightItems.QUALITY_DELIGHT))
+                .define('S', ModItems.NETHER_SALAD.get())
+                .pattern("WFC")
+                .pattern("LHL")
+                .pattern("hSh")
+                .unlockedBy("hasHide", has(NDItems.HOGLIN_HIDE.get()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_gold", NetherItems.NETHER_QUALITY))
+                .define('P', getItemFromID("propelpearl_gold", NetherItems.NETHER_QUALITY))
+                .define('R', Items.BLAZE_ROD)
+                .define('S', Ingredient.of(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", NetherItems.NETHER_QUALITY)))
+                .pattern("PS")
+                .pattern("R ")
+                .unlockedBy("hasRod", has(Items.BLAZE_ROD))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_gold", NetherItems.NETHER_QUALITY))
+                .requires(Items.WARPED_ROOTS)
+                .requires(Items.WARPED_ROOTS)
+                .requires(getItemFromID("hoglin_sirloin_gold", NetherItems.NETHER_QUALITY))
+                .requires(Items.BOWL)
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_gold", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", NetherItems.NETHER_QUALITY)))
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Items.CRIMSON_FUNGUS)
+                .addIngredient(Items.WARPED_ROOTS)
+                .addIngredient(Items.CRIMSON_ROOTS)
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_gold", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Items.CRIMSON_FUNGUS)
+                .addIngredient(Items.CRIMSON_ROOTS)
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", NetherItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_gold", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(getItemFromID("propelpearl_gold", NetherItems.NETHER_QUALITY))
+                .build(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_diamond", NetherItems.NETHER_QUALITY))
+                .define('W', Items.WARPED_ROOTS)
+                .define('C', Items.CRIMSON_ROOTS)
+                .define('F', Items.CRIMSON_FUNGUS)
+                .define('L', getItemFromID("hoglin_loin_diamond", NetherItems.NETHER_QUALITY))
+                .define('H', NDItems.HOGLIN_HIDE.get())
+                .define('h', getItemFromID("ham_diamond", DelightItems.QUALITY_DELIGHT))
+                .define('S', ModItems.NETHER_SALAD.get())
+                .pattern("WFC")
+                .pattern("LHL")
+                .pattern("hSh")
+                .unlockedBy("hasHide", has(NDItems.HOGLIN_HIDE.get()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_diamond", NetherItems.NETHER_QUALITY))
+                .define('P', getItemFromID("propelpearl_diamond", NetherItems.NETHER_QUALITY))
+                .define('R', Items.BLAZE_ROD)
+                .define('S', Ingredient.of(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", NetherItems.NETHER_QUALITY)))
+                .pattern("PS")
+                .pattern("R ")
+                .unlockedBy("hasRod", has(Items.BLAZE_ROD))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_diamond", NetherItems.NETHER_QUALITY))
+                .requires(Items.WARPED_ROOTS)
+                .requires(Items.WARPED_ROOTS)
+                .requires(getItemFromID("hoglin_sirloin_diamond", NetherItems.NETHER_QUALITY))
+                .requires(Items.BOWL)
+                .unlockedBy("hasBowl", has(Items.BOWL))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_diamond", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", NetherItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY)))
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Items.CRIMSON_FUNGUS)
+                .addIngredient(Items.WARPED_ROOTS)
+                .addIngredient(Items.CRIMSON_ROOTS)
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_diamond", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Items.CRIMSON_FUNGUS)
+                .addIngredient(Items.CRIMSON_ROOTS)
+                .addIngredient(Items.WARPED_FUNGUS)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", NetherItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY)))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_diamond", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(Items.MAGMA_CREAM)
+                .addIngredient(getItemFromID("propelpearl_diamond", NetherItems.NETHER_QUALITY))
+                .build(pFinishedRecipeConsumer);
+        */
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("stuffed_hoglin_iron", NetherItems.NETHER_QUALITY), 1, 200, 0.35f)
+                .addIngredient(ModItems.NETHER_SALAD.get())
+                .addIngredient(getItemFromID("raw_stuffed_hoglin_iron", NetherItems.NETHER_QUALITY))
+                .addIngredient(ModItems.NETHER_SALAD.get())
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("stuffed_hoglin_gold", NetherItems.NETHER_QUALITY), 1, 200, 0.35f)
+                .addIngredient(ModItems.NETHER_SALAD.get())
+                .addIngredient(getItemFromID("raw_stuffed_hoglin_gold", NetherItems.NETHER_QUALITY))
+                .addIngredient(ModItems.NETHER_SALAD.get())
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("stuffed_hoglin_diamond", NetherItems.NETHER_QUALITY), 1, 200, 0.35f)
+                .addIngredient(ModItems.NETHER_SALAD.get())
+                .addIngredient(getItemFromID("raw_stuffed_hoglin_diamond", NetherItems.NETHER_QUALITY))
+                .addIngredient(ModItems.NETHER_SALAD.get())
                 .build(pFinishedRecipeConsumer);
 
     }

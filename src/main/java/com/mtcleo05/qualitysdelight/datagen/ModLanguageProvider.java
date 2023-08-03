@@ -1,10 +1,10 @@
 package com.mtcleo05.qualitysdelight.datagen;
 
 import com.mtcleo05.qualitycrops.QualityCrops;
-import com.mtcleo05.qualitycrops.items.ModItems;
 import com.mtcleo05.qualitycrops.quality.QualityBowlFoodItem;
 import com.mtcleo05.qualitycrops.quality.QualityItem;
 import com.mtcleo05.qualitycrops.items.ModCrops;
+import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
 import com.mtcleo05.qualitysdelight.item.DelightItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Item;
@@ -23,8 +23,21 @@ public class ModLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
 
         this.add("itemGroup.qualitysdelight.items", "Quality's Delight Items");
+        this.add("itemGroup.qualitysdelight.nether_items", "Nether's Delight Items");
 
         Iterable<Item> newItems = DelightItems.QUALITY_DELIGHT.getEntries().stream().map(RegistryObject::get)::iterator;
+
+        newItems.forEach(item -> {
+            if(item instanceof QualityItem){
+                this.add(item,cTC(removeQualityID(getItemName(item))));
+            }else if(item instanceof QualityBowlFoodItem){
+                this.add(item, cTC(removeQualityID(getItemName(item))));
+            }else{
+                this.add(item, cTC(getItemName(item)));
+            }
+        });
+
+        newItems = NetherItems.NETHER_QUALITY.getEntries().stream().map(RegistryObject::get)::iterator;
 
         newItems.forEach(item -> {
             if(item instanceof QualityItem){

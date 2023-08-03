@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:diamond/raw_fishes"
+    },
+    {
+      "item": "qualitysdelight:tomato_sauce_diamond"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fish_stew_diamond"
+  }
+}

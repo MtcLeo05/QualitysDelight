@@ -28,6 +28,9 @@ public class ModTags {
     public static TagKey<Item> IRON_COOKED_PORK = forgeItemTag("iron/cooked_pork");
     public static TagKey<Item> GOLD_COOKED_PORK = forgeItemTag("gold/cooked_pork");
     public static TagKey<Item> DIAMOND_COOKED_PORK = forgeItemTag("diamond/cooked_pork");
+    public static TagKey<Item> IRON_RAW_PORK = forgeItemTag("iron/raw_pork");
+    public static TagKey<Item> GOLD_RAW_PORK = forgeItemTag("gold/raw_pork");
+    public static TagKey<Item> DIAMOND_RAW_PORK = forgeItemTag("diamond/raw_pork");
     public static TagKey<Item> IRON_SALAD_INGREDIENTS = forgeItemTag("iron/crops/cabbage");
     public static TagKey<Item> GOLD_SALAD_INGREDIENTS = forgeItemTag("gold/crops/cabbage");
     public static TagKey<Item> DIAMOND_SALAD_INGREDIENTS = forgeItemTag("diamond/crops/cabbage");
@@ -37,6 +40,15 @@ public class ModTags {
     public static TagKey<Item> IRON_COOKED_SALMON = forgeItemTag("iron/cooked_fishes/salmon");
     public static TagKey<Item> GOLD_COOKED_SALMON =  forgeItemTag("gold/cooked_fishes/salmon");
     public static TagKey<Item> DIAMOND_COOKED_SALMON = forgeItemTag("diamond/cooked_fishes/salmon");
+    public static TagKey<Item> IRON_RAW_FISHES = forgeItemTag("iron/raw_fishes");
+    public static TagKey<Item> GOLD_RAW_FISHES =  forgeItemTag("gold/raw_fishes");
+    public static TagKey<Item> DIAMOND_RAW_FISHES = forgeItemTag("diamond/raw_fishes");
+    public static TagKey<Item> IRON_RAW_COD = forgeItemTag("iron/raw_fishes/cod");
+    public static TagKey<Item> GOLD_RAW_COD =  forgeItemTag("gold/raw_fishes/cod");
+    public static TagKey<Item> DIAMOND_RAW_COD = forgeItemTag("diamond/raw_fishes/cod");
+    public static TagKey<Item> IRON_RAW_SALMON = forgeItemTag("iron/raw_fishes/salmon");
+    public static TagKey<Item> GOLD_RAW_SALMON =  forgeItemTag("gold/raw_fishes/salmon");
+    public static TagKey<Item> DIAMOND_RAW_SALMON = forgeItemTag("diamond/raw_fishes/salmon");
 
 
     private static TagKey<Item> forgeItemTag(String path) {

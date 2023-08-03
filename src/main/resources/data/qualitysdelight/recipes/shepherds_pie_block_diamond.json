@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:baked_potato_diamond"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "qualitycrops:baked_potato_diamond"
+    },
+    {
+      "tag": "forge:diamond/cooked_mutton"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:shepherds_pie_block_diamond"
+  }
+}
