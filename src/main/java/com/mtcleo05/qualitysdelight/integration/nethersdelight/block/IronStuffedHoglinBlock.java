@@ -1,6 +1,7 @@
 package com.mtcleo05.qualitysdelight.integration.nethersdelight.block;
 
 import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
+import com.nethersdelight.core.utility.NDTextUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -27,7 +28,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import umpaz.nethersdelight.common.utility.NDTextUtils;
 import vectorwing.farmersdelight.common.registry.ModSounds;
 import vectorwing.farmersdelight.common.tag.ModTags;
 import vectorwing.farmersdelight.common.utility.TextUtils;

@@ -1,6 +1,8 @@
 package com.mtcleo05.qualitysdelight.mixin;
 
 import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
+import com.nethersdelight.common.block.PropelplantBerryCaneBlock;
+import com.nethersdelight.core.registry.NDItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -10,8 +12,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
@@ -22,14 +24,11 @@ import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
-import umpaz.nethersdelight.common.block.PropelplantBerryCaneBlock;
-import umpaz.nethersdelight.common.block.util.PropelplantBlock;
-import umpaz.nethersdelight.common.registry.NDItems;
 
 import java.util.Objects;
 
 @Mixin(PropelplantBerryCaneBlock.class)
-public class PropelplantBerryCaneMixin extends PropelplantBlock {
+public class PropelplantBerryCaneMixin extends Block {
 
     @Shadow
     @Final

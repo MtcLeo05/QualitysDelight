@@ -19,10 +19,6 @@ public class OceanCreativeTab {
             return new ItemStack(getItemFromID("guardian_soup_iron", OceanItems.OCEAN_QUALITY));
         }
 
-        @Override
-        public @NotNull Component getDisplayName() {
-            return Component.translatable("itemGroup.qualitysdelight.ocean_items");
-        }
     };
 
     public static Item getItemFromID(String id, DeferredRegister<Item> register){

@@ -19,10 +19,6 @@ public class DelightCreativeTab {
             return new ItemStack(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT));
         }
 
-        @Override
-        public @NotNull Component getDisplayName() {
-            return Component.translatable("itemGroup.qualitysdelight.items");
-        }
     };
 
     public static Item getItemFromID(String id, DeferredRegister<Item> register){

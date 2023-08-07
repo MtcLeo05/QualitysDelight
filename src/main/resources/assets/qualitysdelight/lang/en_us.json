@@ -317,7 +317,7 @@
   "item.qualitysdelight.warped_moldy_meat_diamond": "Warped Moldy Meat",
   "item.qualitysdelight.warped_moldy_meat_gold": "Warped Moldy Meat",
   "item.qualitysdelight.warped_moldy_meat_iron": "Warped Moldy Meat",
-  "itemGroup.qualitysdelight.items": "Quality's Delight Items",
-  "itemGroup.qualitysdelight.nether_items": "Nether's Delight Items",
-  "itemGroup.qualitysdelight.ocean_items": "Ocean's Delight Items"
+  "itemGroup.qualitysdelight_items": "Quality's Delight Items",
+  "itemGroup.qualitysdelight_nether_items": "Nether's Delight Items",
+  "itemGroup.qualitysdelight_ocean_items": "Ocean's Delight Items"
 }
