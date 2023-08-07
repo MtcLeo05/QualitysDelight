@@ -1,7 +1,5 @@
 package com.mtcleo05.qualitysdelight.integration.oceansdelight;
 
-import com.mtcleo05.qualitysdelight.integration.nethersdelight.block.NetherBlocks;
-import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
 import com.mtcleo05.qualitysdelight.integration.oceansdelight.block.OceanBlocks;
 import com.mtcleo05.qualitysdelight.integration.oceansdelight.item.OceanItems;
 import net.minecraftforge.eventbus.api.IEventBus;
