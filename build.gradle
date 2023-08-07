@@ -162,6 +162,7 @@ dependencies {
 
     implementation fg.deobf("curse.maven:farmers-delight-398521:4636013")
     implementation fg.deobf("curse.maven:nethers-delight-496394:3971576")
+    implementation fg.deobf("curse.maven:oceans-delight-841262:4652058")
     implementation fg.deobf("curse.maven:quality-crops-892509:4667172")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'

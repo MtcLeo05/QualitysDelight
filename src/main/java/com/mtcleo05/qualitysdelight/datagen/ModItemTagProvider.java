@@ -4,6 +4,7 @@ import com.mtcleo05.qualitycrops.quality.QualityBowlFoodItem;
 import com.mtcleo05.qualitycrops.quality.QualityItem;
 import com.mtcleo05.qualitysdelight.QualitysDelight;
 import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
+import com.mtcleo05.qualitysdelight.integration.oceansdelight.item.OceanItems;
 import com.mtcleo05.qualitysdelight.item.DelightItems;
 import com.mtcleo05.qualitysdelight.tags.ModTags;
 import net.minecraft.core.Registry;
@@ -54,6 +55,28 @@ public class ModItemTagProvider extends ItemTagsProvider {
         });
 
         newItems = NetherItems.NETHER_QUALITY.getEntries().stream().map(RegistryObject::get)::iterator;
+
+        newItems.forEach(item -> {
+            if(item instanceof QualityItem qualityItem){
+                if(qualityItem.cropQuality == 1){
+                    this.tag(ModTags.QUALITY_IRON).add(item);
+                }else if(qualityItem.cropQuality == 2){
+                    this.tag(ModTags.QUALITY_GOLD).add(item);
+                }else{
+                    this.tag(ModTags.QUALITY_DIAMOND).add(item);
+                }
+            }else if(item instanceof QualityBowlFoodItem qualityItem){
+                if(qualityItem.cropQuality == 1){
+                    this.tag(ModTags.QUALITY_IRON).add(item);
+                }else if(qualityItem.cropQuality == 2){
+                    this.tag(ModTags.QUALITY_GOLD).add(item);
+                }else{
+                    this.tag(ModTags.QUALITY_DIAMOND).add(item);
+                }
+            }
+        });
+
+        newItems = OceanItems.OCEAN_QUALITY.getEntries().stream().map(RegistryObject::get)::iterator;
 
         newItems.forEach(item -> {
             if(item instanceof QualityItem qualityItem){

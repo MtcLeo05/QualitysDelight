@@ -12,6 +12,9 @@
     "qualitysdelight:quality_smoked_ham_from_hoglin_machete",
     "qualitysdelight:quality_smoked_ham_from_hoglin_knife",
     "qualitysdelight:quality_smoked_ham_from_pig_machete",
-    "qualitysdelight:quality_smoked_ham_from_pig_knife"
+    "qualitysdelight:quality_smoked_ham_from_pig_knife",
+    "qualitysdelight:quality_tentacles_from_squid_knife",
+    "qualitysdelight:quality_elder_guardian_slab_from_elder_guardian_knife",
+    "qualitysdelight:quality_guardian_from_guardian"
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:gold/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    },
+    {
+      "item": "qualitysdelight:cooked_elder_guardian_slice_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:cabbage_wrapped_elder_guardian_gold"
+  }
+}

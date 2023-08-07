@@ -4,8 +4,6 @@ import com.mtcleo05.qualitycrops.rarities.ModRarities;
 import com.mtcleo05.qualitysdelight.QualitysDelight;
 import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherCreativeTab;
 import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
-import com.mtcleo05.qualitysdelight.item.DelightCreativeTab;
-import com.mtcleo05.qualitysdelight.item.DelightItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -23,7 +21,7 @@ import java.util.function.Supplier;
 
 public class NetherBlocks {
 
-    public static final DeferredRegister<Block> DELIGHT_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, QualitysDelight.MODID);
+    public static final DeferredRegister<Block> NETHER_BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, QualitysDelight.MODID);
 
     public static void registerQualityBlock(String id, BlockBehaviour blockBehaviour){
         registerBlock(id + "_iron", () ->
@@ -48,7 +46,7 @@ public class NetherBlocks {
     }
 
     private static <T extends Block> void registerBlock(String name, Supplier<T> block, Rarity rarity){
-        RegistryObject<T> toReturn = DELIGHT_BLOCKS.register(name, block);
+        RegistryObject<T> toReturn = NETHER_BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, rarity);
     }
 
@@ -63,7 +61,7 @@ public class NetherBlocks {
 
         registerQualityBlock("stuffed_hoglin", Blocks.CAKE);
 
-        DELIGHT_BLOCKS.register(eventBus);
+        NETHER_BLOCKS.register(eventBus);
     }
 
 

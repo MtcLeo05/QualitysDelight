@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:guardian_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "item": "qualitycrops:egg_iron"
+    },
+    {
+      "item": "qualitycrops:egg_iron"
+    },
+    {
+      "item": "qualitysdelight:tomato_iron"
+    },
+    {
+      "item": "qualitysdelight:tomato_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:guardian_soup_iron"
+  }
+}

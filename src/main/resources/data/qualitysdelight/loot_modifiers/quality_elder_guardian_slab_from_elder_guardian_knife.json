@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "oceansdelight:elder_guardian_slab"
+      ]
+    }
+  ],
+  "type": "qualitysdelight:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "killer",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "tag": "farmersdelight:tools/knives"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:elder_guardian",
+        "flags": {
+          "is_on_fire": false
+        }
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:elder_guardian_slab_iron",
+  "goldItem": "qualitysdelight:elder_guardian_slab_gold",
+  "diamondItem": "qualitysdelight:elder_guardian_slab_diamond"
+}

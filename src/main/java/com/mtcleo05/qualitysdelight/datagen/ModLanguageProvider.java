@@ -5,6 +5,7 @@ import com.mtcleo05.qualitycrops.quality.QualityBowlFoodItem;
 import com.mtcleo05.qualitycrops.quality.QualityItem;
 import com.mtcleo05.qualitycrops.items.ModCrops;
 import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
+import com.mtcleo05.qualitysdelight.integration.oceansdelight.item.OceanItems;
 import com.mtcleo05.qualitysdelight.item.DelightItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Item;
@@ -24,12 +25,13 @@ public class ModLanguageProvider extends LanguageProvider {
 
         this.add("itemGroup.qualitysdelight.items", "Quality's Delight Items");
         this.add("itemGroup.qualitysdelight.nether_items", "Nether's Delight Items");
+        this.add("itemGroup.qualitysdelight.ocean_items", "Ocean's Delight Items");
 
         Iterable<Item> newItems = DelightItems.QUALITY_DELIGHT.getEntries().stream().map(RegistryObject::get)::iterator;
 
         newItems.forEach(item -> {
             if(item instanceof QualityItem){
-                this.add(item,cTC(removeQualityID(getItemName(item))));
+                this.add(item, cTC(removeQualityID(getItemName(item))));
             }else if(item instanceof QualityBowlFoodItem){
                 this.add(item, cTC(removeQualityID(getItemName(item))));
             }else{
@@ -41,7 +43,7 @@ public class ModLanguageProvider extends LanguageProvider {
 
         newItems.forEach(item -> {
             if(item instanceof QualityItem){
-                this.add(item,cTC(removeQualityID(getItemName(item))));
+                this.add(item, cTC(removeQualityID(getItemName(item))));
             }else if(item instanceof QualityBowlFoodItem){
                 this.add(item, cTC(removeQualityID(getItemName(item))));
             }else{
@@ -49,6 +51,17 @@ public class ModLanguageProvider extends LanguageProvider {
             }
         });
 
+        newItems = OceanItems.OCEAN_QUALITY.getEntries().stream().map(RegistryObject::get)::iterator;
+
+        newItems.forEach(item -> {
+            if(item instanceof QualityItem){
+                this.add(item, cTC(removeQualityID(getItemName(item))));
+            }else if(item instanceof QualityBowlFoodItem){
+                this.add(item, cTC(removeQualityID(getItemName(item))));
+            }else{
+                this.add(item, cTC(getItemName(item)));
+            }
+        });
     }
 
     //convert title case: alfa_beta -> Alfa Beta

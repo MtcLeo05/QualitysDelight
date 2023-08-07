@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:guardian_gold"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitycrops:egg_gold"
+    },
+    {
+      "item": "qualitycrops:egg_gold"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:guardian_soup_gold"
+  }
+}

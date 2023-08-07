@@ -1,9 +1,11 @@
 package com.mtcleo05.qualitysdelight.datagen;
 
 import com.mtcleo05.qualitycrops.items.ModCrops;
+import com.mtcleo05.qualitycrops.items.ModItems;
 import com.mtcleo05.qualitycrops.quality.QualityItem;
 import com.mtcleo05.qualitysdelight.QualitysDelight;
 import com.mtcleo05.qualitysdelight.integration.nethersdelight.item.NetherItems;
+import com.mtcleo05.qualitysdelight.integration.oceansdelight.item.OceanItems;
 import com.mtcleo05.qualitysdelight.item.DelightFoods;
 import com.mtcleo05.qualitysdelight.item.DelightItems;
 import com.mtcleo05.qualitysdelight.tags.ModTags;
@@ -24,7 +26,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import umpaz.nethersdelight.common.registry.NDItems;
 import vectorwing.farmersdelight.FarmersDelight;
-import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
@@ -1192,7 +1193,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         simpleCookingRecipe(pFinishedRecipeConsumer, "smoking", RecipeSerializer.SMOKING_RECIPE, 200, getItemFromID("ham_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("smoked_ham_gold", DelightItems.QUALITY_DELIGHT), 0.35F);
         simpleCookingRecipe(pFinishedRecipeConsumer, "smoking", RecipeSerializer.SMOKING_RECIPE, 200, getItemFromID("ham_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("smoked_ham_diamond", DelightItems.QUALITY_DELIGHT), 0.35F);
 
-        simpleQualityFoodRecipe("hoglin_loin", NetherItems.NETHER_QUALITY, "hoglin_sirloin", NetherItems.NETHER_QUALITY, pFinishedRecipeConsumer);
+        simpleQualityFoodRecipe("hoglin_loin", OceanItems.NETHER_QUALITY, "hoglin_sirloin", OceanItems.NETHER_QUALITY, pFinishedRecipeConsumer);
 
         simpleQualityCuttingRecipeVanillaAddition("ham", DelightItems.QUALITY_DELIGHT, "porkchop", ModItems.VANILLA_QUALITY, 2, Items.BONE, 1, pFinishedRecipeConsumer);
         simpleQualityCuttingRecipeVanillaAddition("smoked_ham", DelightItems.QUALITY_DELIGHT, "cooked_porkchop", ModItems.VANILLA_QUALITY, 2, Items.BONE, 1, pFinishedRecipeConsumer);
@@ -1245,7 +1246,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         getItemFromID("minced_beef_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_iron", DelightItems.QUALITY_DELIGHT),
                         getItemFromID("bacon_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_iron", DelightItems.QUALITY_DELIGHT),
                         getItemFromID("salmon_slice_iron", DelightItems.QUALITY_DELIGHT), getItemFromID("cod_slice_iron", DelightItems.QUALITY_DELIGHT),
-                        getItemFromID("hoglin_loin_iron", NetherItems.NETHER_QUALITY)
+                        getItemFromID("hoglin_loin_iron", OceanItems.NETHER_QUALITY)
                 ))
                 .unlockedBy("hasCabbage", has(ModTags.IRON_SALAD_INGREDIENTS))
                 .build(pFinishedRecipeConsumer);
@@ -1259,7 +1260,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         getItemFromID("minced_beef_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_gold", DelightItems.QUALITY_DELIGHT),
                         getItemFromID("bacon_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_gold", DelightItems.QUALITY_DELIGHT),
                         getItemFromID("salmon_slice_gold", DelightItems.QUALITY_DELIGHT), getItemFromID("cod_slice_gold", DelightItems.QUALITY_DELIGHT),
-                        getItemFromID("hoglin_loin_gold", NetherItems.NETHER_QUALITY)
+                        getItemFromID("hoglin_loin_gold", OceanItems.NETHER_QUALITY)
                 ))
                 .unlockedBy("hasCabbage", has(ModTags.GOLD_SALAD_INGREDIENTS))
                 .build(pFinishedRecipeConsumer);
@@ -1273,18 +1274,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         getItemFromID("minced_beef_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("chicken_cuts_diamond", DelightItems.QUALITY_DELIGHT),
                         getItemFromID("bacon_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("mutton_chops_diamond", DelightItems.QUALITY_DELIGHT),
                         getItemFromID("salmon_slice_diamond", DelightItems.QUALITY_DELIGHT), getItemFromID("cod_slice_diamond", DelightItems.QUALITY_DELIGHT),
-                        getItemFromID("hoglin_loin_diamond", NetherItems.NETHER_QUALITY)
+                        getItemFromID("hoglin_loin_diamond", OceanItems.NETHER_QUALITY)
                 ))
                 .unlockedBy("hasCabbage", has(ModTags.DIAMOND_SALAD_INGREDIENTS))
                 .build(pFinishedRecipeConsumer);
 
-            simpleQualityCuttingRecipe("strider_slice", NetherItems.NETHER_QUALITY, "ground_strider", NetherItems.NETHER_QUALITY, 2, pFinishedRecipeConsumer);
+            simpleQualityCuttingRecipe("strider_slice", OceanItems.NETHER_QUALITY, "ground_strider", OceanItems.NETHER_QUALITY, 2, pFinishedRecipeConsumer);
 
-            ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_iron", NetherItems.NETHER_QUALITY))
+            ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_iron", OceanItems.NETHER_QUALITY))
                 .define('W', Items.WARPED_ROOTS)
                 .define('C', Items.CRIMSON_ROOTS)
                 .define('F', Items.CRIMSON_FUNGUS)
-                .define('L', getItemFromID("hoglin_loin_iron", NetherItems.NETHER_QUALITY))
+                .define('L', getItemFromID("hoglin_loin_iron", OceanItems.NETHER_QUALITY))
                 .define('H', NDItems.HOGLIN_HIDE.get())
                 .define('h', getItemFromID("ham_iron", DelightItems.QUALITY_DELIGHT))
                 .define('S', ModItems.NETHER_SALAD.get())
@@ -1294,53 +1295,53 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("hasHide", has(NDItems.HOGLIN_HIDE.get()))
                 .save(pFinishedRecipeConsumer);
 
-        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_iron", NetherItems.NETHER_QUALITY))
-                .define('P', getItemFromID("propelpearl_iron", NetherItems.NETHER_QUALITY))
+        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_iron", OceanItems.NETHER_QUALITY))
+                .define('P', getItemFromID("propelpearl_iron", OceanItems.NETHER_QUALITY))
                 .define('R', Items.BLAZE_ROD)
-                .define('S', Ingredient.of(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", NetherItems.NETHER_QUALITY)))
+                .define('S', Ingredient.of(getItemFromID("ground_strider_iron", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", OceanItems.NETHER_QUALITY)))
                 .pattern("PS")
                 .pattern("R ")
                 .unlockedBy("hasRod", has(Items.BLAZE_ROD))
                 .save(pFinishedRecipeConsumer);
 
-        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_iron", NetherItems.NETHER_QUALITY))
+        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_iron", OceanItems.NETHER_QUALITY))
                 .requires(Items.WARPED_ROOTS)
                 .requires(Items.WARPED_ROOTS)
-                .requires(getItemFromID("hoglin_sirloin_iron", NetherItems.NETHER_QUALITY))
+                .requires(getItemFromID("hoglin_sirloin_iron", OceanItems.NETHER_QUALITY))
                 .requires(Items.BOWL)
                 .unlockedBy("hasBowl", has(Items.BOWL))
                 .save(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_iron", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
-                .addIngredient(Ingredient.of(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", NetherItems.NETHER_QUALITY)))
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_iron", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_iron", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", OceanItems.NETHER_QUALITY)))
                 .addIngredient(Items.WARPED_FUNGUS)
                 .addIngredient(Items.CRIMSON_FUNGUS)
                 .addIngredient(Items.WARPED_ROOTS)
                 .addIngredient(Items.CRIMSON_ROOTS)
-                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_iron", OceanItems.NETHER_QUALITY)))
                 .build(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_iron", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_iron", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
                 .addIngredient(Items.WARPED_FUNGUS)
                 .addIngredient(Items.CRIMSON_FUNGUS)
                 .addIngredient(Items.CRIMSON_ROOTS)
                 .addIngredient(Items.WARPED_FUNGUS)
-                .addIngredient(Ingredient.of(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", NetherItems.NETHER_QUALITY)))
-                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_iron", NetherItems.NETHER_QUALITY)))
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_iron", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_iron", OceanItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_iron", OceanItems.NETHER_QUALITY)))
                 .build(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_iron", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_iron", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
                 .addIngredient(Items.MAGMA_CREAM)
                 .addIngredient(Items.MAGMA_CREAM)
                 .addIngredient(Items.MAGMA_CREAM)
-                .addIngredient(getItemFromID("propelpearl_iron", NetherItems.NETHER_QUALITY))
+                .addIngredient(getItemFromID("propelpearl_iron", OceanItems.NETHER_QUALITY))
                 .build(pFinishedRecipeConsumer);
 
-        ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_gold", NetherItems.NETHER_QUALITY))
+        ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_gold", OceanItems.NETHER_QUALITY))
                 .define('W', Items.WARPED_ROOTS)
                 .define('C', Items.CRIMSON_ROOTS)
                 .define('F', Items.CRIMSON_FUNGUS)
-                .define('L', getItemFromID("hoglin_loin_gold", NetherItems.NETHER_QUALITY))
+                .define('L', getItemFromID("hoglin_loin_gold", OceanItems.NETHER_QUALITY))
                 .define('H', NDItems.HOGLIN_HIDE.get())
                 .define('h', getItemFromID("ham_gold", DelightItems.QUALITY_DELIGHT))
                 .define('S', ModItems.NETHER_SALAD.get())
@@ -1350,53 +1351,53 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("hasHide", has(NDItems.HOGLIN_HIDE.get()))
                 .save(pFinishedRecipeConsumer);
 
-        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_gold", NetherItems.NETHER_QUALITY))
-                .define('P', getItemFromID("propelpearl_gold", NetherItems.NETHER_QUALITY))
+        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_gold", OceanItems.NETHER_QUALITY))
+                .define('P', getItemFromID("propelpearl_gold", OceanItems.NETHER_QUALITY))
                 .define('R', Items.BLAZE_ROD)
-                .define('S', Ingredient.of(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", NetherItems.NETHER_QUALITY)))
+                .define('S', Ingredient.of(getItemFromID("ground_strider_gold", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", OceanItems.NETHER_QUALITY)))
                 .pattern("PS")
                 .pattern("R ")
                 .unlockedBy("hasRod", has(Items.BLAZE_ROD))
                 .save(pFinishedRecipeConsumer);
 
-        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_gold", NetherItems.NETHER_QUALITY))
+        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_gold", OceanItems.NETHER_QUALITY))
                 .requires(Items.WARPED_ROOTS)
                 .requires(Items.WARPED_ROOTS)
-                .requires(getItemFromID("hoglin_sirloin_gold", NetherItems.NETHER_QUALITY))
+                .requires(getItemFromID("hoglin_sirloin_gold", OceanItems.NETHER_QUALITY))
                 .requires(Items.BOWL)
                 .unlockedBy("hasBowl", has(Items.BOWL))
                 .save(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_gold", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
-                .addIngredient(Ingredient.of(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", NetherItems.NETHER_QUALITY)))
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_gold", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_gold", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", OceanItems.NETHER_QUALITY)))
                 .addIngredient(Items.WARPED_FUNGUS)
                 .addIngredient(Items.CRIMSON_FUNGUS)
                 .addIngredient(Items.WARPED_ROOTS)
                 .addIngredient(Items.CRIMSON_ROOTS)
-                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_gold", OceanItems.NETHER_QUALITY)))
                 .build(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_gold", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_gold", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
                 .addIngredient(Items.WARPED_FUNGUS)
                 .addIngredient(Items.CRIMSON_FUNGUS)
                 .addIngredient(Items.CRIMSON_ROOTS)
                 .addIngredient(Items.WARPED_FUNGUS)
-                .addIngredient(Ingredient.of(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", NetherItems.NETHER_QUALITY)))
-                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_gold", NetherItems.NETHER_QUALITY)))
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_gold", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_gold", OceanItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_gold", OceanItems.NETHER_QUALITY)))
                 .build(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_gold", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_gold", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
                 .addIngredient(Items.MAGMA_CREAM)
                 .addIngredient(Items.MAGMA_CREAM)
                 .addIngredient(Items.MAGMA_CREAM)
-                .addIngredient(getItemFromID("propelpearl_gold", NetherItems.NETHER_QUALITY))
+                .addIngredient(getItemFromID("propelpearl_gold", OceanItems.NETHER_QUALITY))
                 .build(pFinishedRecipeConsumer);
 
-        ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_diamond", NetherItems.NETHER_QUALITY))
+        ShapedRecipeBuilder.shaped(getItemFromID("raw_stuffed_hoglin_diamond", OceanItems.NETHER_QUALITY))
                 .define('W', Items.WARPED_ROOTS)
                 .define('C', Items.CRIMSON_ROOTS)
                 .define('F', Items.CRIMSON_FUNGUS)
-                .define('L', getItemFromID("hoglin_loin_diamond", NetherItems.NETHER_QUALITY))
+                .define('L', getItemFromID("hoglin_loin_diamond", OceanItems.NETHER_QUALITY))
                 .define('H', NDItems.HOGLIN_HIDE.get())
                 .define('h', getItemFromID("ham_diamond", DelightItems.QUALITY_DELIGHT))
                 .define('S', ModItems.NETHER_SALAD.get())
@@ -1406,48 +1407,47 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("hasHide", has(NDItems.HOGLIN_HIDE.get()))
                 .save(pFinishedRecipeConsumer);
 
-        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_diamond", NetherItems.NETHER_QUALITY))
-                .define('P', getItemFromID("propelpearl_diamond", NetherItems.NETHER_QUALITY))
+        ShapedRecipeBuilder.shaped(getItemFromID("nether_skewer_diamond", OceanItems.NETHER_QUALITY))
+                .define('P', getItemFromID("propelpearl_diamond", OceanItems.NETHER_QUALITY))
                 .define('R', Items.BLAZE_ROD)
-                .define('S', Ingredient.of(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", NetherItems.NETHER_QUALITY)))
+                .define('S', Ingredient.of(getItemFromID("ground_strider_diamond", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", OceanItems.NETHER_QUALITY)))
                 .pattern("PS")
                 .pattern("R ")
                 .unlockedBy("hasRod", has(Items.BLAZE_ROD))
                 .save(pFinishedRecipeConsumer);
 
-        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_diamond", NetherItems.NETHER_QUALITY))
+        ShapelessRecipeBuilder.shapeless(getItemFromID("warped_moldy_meat_diamond", OceanItems.NETHER_QUALITY))
                 .requires(Items.WARPED_ROOTS)
                 .requires(Items.WARPED_ROOTS)
-                .requires(getItemFromID("hoglin_sirloin_diamond", NetherItems.NETHER_QUALITY))
+                .requires(getItemFromID("hoglin_sirloin_diamond", OceanItems.NETHER_QUALITY))
                 .requires(Items.BOWL)
                 .unlockedBy("hasBowl", has(Items.BOWL))
                 .save(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_diamond", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
-                .addIngredient(Ingredient.of(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", NetherItems.NETHER_QUALITY)))
-                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY)))
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("grilled_strider_diamond", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_diamond", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", OceanItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_diamond", OceanItems.NETHER_QUALITY)))
                 .addIngredient(Items.WARPED_FUNGUS)
                 .addIngredient(Items.CRIMSON_FUNGUS)
                 .addIngredient(Items.WARPED_ROOTS)
                 .addIngredient(Items.CRIMSON_ROOTS)
                 .build(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_diamond", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("strider_moss_stew_diamond", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BOWL)
                 .addIngredient(Items.WARPED_FUNGUS)
                 .addIngredient(Items.CRIMSON_FUNGUS)
                 .addIngredient(Items.CRIMSON_ROOTS)
                 .addIngredient(Items.WARPED_FUNGUS)
-                .addIngredient(Ingredient.of(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", NetherItems.NETHER_QUALITY)))
-                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_diamond", NetherItems.NETHER_QUALITY)))
+                .addIngredient(Ingredient.of(getItemFromID("ground_strider_diamond", OceanItems.NETHER_QUALITY), getItemFromID("strider_slice_diamond", OceanItems.NETHER_QUALITY)))
+                .unlockedBy("hasStrider", has(getItemFromID("ground_strider_diamond", OceanItems.NETHER_QUALITY)))
                 .build(pFinishedRecipeConsumer);
 
-        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_diamond", NetherItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("magma_gelatin_diamond", OceanItems.NETHER_QUALITY), 1, 200, 0.35f, Items.BUCKET)
                 .addIngredient(Items.MAGMA_CREAM)
                 .addIngredient(Items.MAGMA_CREAM)
                 .addIngredient(Items.MAGMA_CREAM)
-                .addIngredient(getItemFromID("propelpearl_diamond", NetherItems.NETHER_QUALITY))
+                .addIngredient(getItemFromID("propelpearl_diamond", OceanItems.NETHER_QUALITY))
                 .build(pFinishedRecipeConsumer);
-        */
 
         CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("stuffed_hoglin_iron", NetherItems.NETHER_QUALITY), 1, 200, 0.35f)
                 .addIngredient(ModItems.NETHER_SALAD.get())
@@ -1466,6 +1466,193 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .addIngredient(getItemFromID("raw_stuffed_hoglin_diamond", NetherItems.NETHER_QUALITY))
                 .addIngredient(ModItems.NETHER_SALAD.get())
                 .build(pFinishedRecipeConsumer);
+
+        simpleQualityCuttingRecipe("tentacles", OceanItems.OCEAN_QUALITY, "cut_tentacles", OceanItems.OCEAN_QUALITY, 3, pFinishedRecipeConsumer);
+        simpleQualityCuttingRecipeVanillaAddition("elder_guardian_slab", OceanItems.OCEAN_QUALITY, "elder_guardian_slice", OceanItems.OCEAN_QUALITY, 9, Items.BONE_MEAL, 1, pFinishedRecipeConsumer);
+        simpleQualityCuttingRecipeVanillaAddition("pufferfish", ModItems.VANILLA_QUALITY, "fugu_slice", OceanItems.OCEAN_QUALITY, 6, Items.BONE_MEAL, 1, pFinishedRecipeConsumer);
+
+        simpleQualityFoodRecipe("guardian_tail", OceanItems.OCEAN_QUALITY, "cooked_guardian_tail", OceanItems.OCEAN_QUALITY, pFinishedRecipeConsumer);
+        simpleQualityFoodRecipe("elder_guardian_slice", OceanItems.OCEAN_QUALITY, "cooked_elder_guardian_slice", OceanItems.OCEAN_QUALITY, pFinishedRecipeConsumer);
+        simpleQualityFoodRecipe("tentacle_on_a_stick", OceanItems.OCEAN_QUALITY, "baked_tentacle_on_a_stick", OceanItems.OCEAN_QUALITY, pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("elder_guardian_roll_iron", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("elder_guardian_slice_iron", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("elder_guardian_slice_iron", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("cooked_rice_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasSlice",  has(getItemFromID("elder_guardian_slice_iron", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("fugu_roll_iron", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("fugu_slice_iron", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("fugu_slice_iron", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("cooked_rice_iron", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasSlice",  has(getItemFromID("fugu_slice_iron", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("tentacle_on_a_stick_iron", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("tentacles_iron", OceanItems.OCEAN_QUALITY))
+                .requires(Items.STICK)
+                .unlockedBy("hasTentacle",  has(getItemFromID("tentacles_iron", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("elder_guardian_roll_gold", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("elder_guardian_slice_gold", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("elder_guardian_slice_gold", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("cooked_rice_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasSlice",  has(getItemFromID("elder_guardian_slice_gold", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("fugu_roll_gold", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("fugu_slice_gold", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("fugu_slice_gold", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("cooked_rice_gold", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasSlice",  has(getItemFromID("fugu_slice_gold", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("tentacle_on_a_stick_gold", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("tentacles_gold", OceanItems.OCEAN_QUALITY))
+                .requires(Items.STICK)
+                .unlockedBy("hasTentacle",  has(getItemFromID("tentacles_gold", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("elder_guardian_roll_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("elder_guardian_slice_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("elder_guardian_slice_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("cooked_rice_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasSlice",  has(getItemFromID("elder_guardian_slice_diamond", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("fugu_roll_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("fugu_slice_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("fugu_slice_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("cooked_rice_diamond", DelightItems.QUALITY_DELIGHT))
+                .unlockedBy("hasSlice",  has(getItemFromID("fugu_slice_diamond", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("tentacle_on_a_stick_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("tentacles_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(Items.STICK)
+                .unlockedBy("hasTentacle",  has(getItemFromID("tentacles_diamond", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("braised_sea_pickle_iron", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Items.SEA_PICKLE)
+                .addIngredient(getItemFromID("brown_mushroom_iron", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_iron", ModCrops.CROPS))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("braised_sea_pickle_gold", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Items.SEA_PICKLE)
+                .addIngredient(getItemFromID("brown_mushroom_gold", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_gold", ModCrops.CROPS))
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("braised_sea_pickle_diamond", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f, Items.BOWL)
+                .addIngredient(Items.SEA_PICKLE)
+                .addIngredient(getItemFromID("brown_mushroom_diamond", ModCrops.CROPS))
+                .addIngredient(getItemFromID("brown_mushroom_diamond", ModCrops.CROPS))
+                .build(pFinishedRecipeConsumer);
+
+        */
+
+        simpleQualityFoodRecipe("stuffed_cod", OceanItems.OCEAN_QUALITY, "cooked_stuffed_cod", OceanItems.OCEAN_QUALITY, pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("cabbage_wrapped_elder_guardian_iron", OceanItems.OCEAN_QUALITY))
+                .requires(ModTags.IRON_SALAD_INGREDIENTS)
+                .requires(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("cooked_elder_guardian_slice_iron", OceanItems.OCEAN_QUALITY))
+                .unlockedBy("hasSlice", has(getItemFromID("cooked_elder_guardian_slice_iron", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("stuffed_cod_iron", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("kelp_iron", ModCrops.CROPS))
+                .requires(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("brown_mushroom_iron", ModCrops.CROPS))
+                .requires(getItemFromID("cod_iron", ModItems.VANILLA_QUALITY))
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.ROPE.get())
+                .unlockedBy("hasCod", has(getItemFromID("cod_iron", ModItems.VANILLA_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("honey_fried_kelp_iron", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f)
+                .addIngredient(getItemFromID("dried_kelp_iron", ModItems.VANILLA_QUALITY))
+                .addIngredient(Items.HONEY_BOTTLE)
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("guardian_soup_iron", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f)
+                .addIngredient(getItemFromID("guardian_iron", OceanItems.OCEAN_QUALITY))
+                .addIngredient(getItemFromID("onion_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("egg_iron", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("egg_iron", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_iron", DelightItems.QUALITY_DELIGHT))
+                .build(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("cabbage_wrapped_elder_guardian_gold", OceanItems.OCEAN_QUALITY))
+                .requires(ModTags.GOLD_SALAD_INGREDIENTS)
+                .requires(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("cooked_elder_guardian_slice_gold", OceanItems.OCEAN_QUALITY))
+                .unlockedBy("hasSlice", has(getItemFromID("cooked_elder_guardian_slice_gold", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("stuffed_cod_gold", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("kelp_gold", ModCrops.CROPS))
+                .requires(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("brown_mushroom_gold", ModCrops.CROPS))
+                .requires(getItemFromID("cod_gold", ModItems.VANILLA_QUALITY))
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.ROPE.get())
+                .unlockedBy("hasCod", has(getItemFromID("cod_gold", ModItems.VANILLA_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("honey_fried_kelp_gold", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f)
+                .addIngredient(getItemFromID("dried_kelp_gold", ModItems.VANILLA_QUALITY))
+                .addIngredient(Items.HONEY_BOTTLE)
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("guardian_soup_gold", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f)
+                .addIngredient(getItemFromID("guardian_gold", OceanItems.OCEAN_QUALITY))
+                .addIngredient(getItemFromID("onion_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("egg_gold", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("egg_gold", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_gold", DelightItems.QUALITY_DELIGHT))
+                .build(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("cabbage_wrapped_elder_guardian_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(ModTags.DIAMOND_SALAD_INGREDIENTS)
+                .requires(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("cooked_elder_guardian_slice_diamond", OceanItems.OCEAN_QUALITY))
+                .unlockedBy("hasSlice", has(getItemFromID("cooked_elder_guardian_slice_diamond", OceanItems.OCEAN_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(getItemFromID("stuffed_cod_diamond", OceanItems.OCEAN_QUALITY))
+                .requires(getItemFromID("kelp_diamond", ModCrops.CROPS))
+                .requires(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT))
+                .requires(getItemFromID("brown_mushroom_diamond", ModCrops.CROPS))
+                .requires(getItemFromID("cod_diamond", ModItems.VANILLA_QUALITY))
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.ROPE.get())
+                .unlockedBy("hasCod", has(getItemFromID("cod_diamond", ModItems.VANILLA_QUALITY)))
+                .save(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("honey_fried_kelp_diamond", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f)
+                .addIngredient(getItemFromID("dried_kelp_diamond", ModItems.VANILLA_QUALITY))
+                .addIngredient(Items.HONEY_BOTTLE)
+                .build(pFinishedRecipeConsumer);
+
+        CookingPotRecipeBuilder.cookingPotRecipe(getItemFromID("guardian_soup_diamond", OceanItems.OCEAN_QUALITY), 1, 200, 0.35f)
+                .addIngredient(getItemFromID("guardian_diamond", OceanItems.OCEAN_QUALITY))
+                .addIngredient(getItemFromID("onion_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("egg_diamond", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("egg_diamond", ModItems.VANILLA_QUALITY))
+                .addIngredient(getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT))
+                .addIngredient(getItemFromID("tomato_diamond", DelightItems.QUALITY_DELIGHT))
+                .build(pFinishedRecipeConsumer);
+
 
     }
 

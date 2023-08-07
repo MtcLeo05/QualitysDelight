@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "hasTentacle": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "qualitysdelight:tentacles_diamond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "qualitysdelight:tentacle_on_a_stick_diamond"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "hasTentacle",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "qualitysdelight:tentacle_on_a_stick_diamond"
+    ]
+  }
+}

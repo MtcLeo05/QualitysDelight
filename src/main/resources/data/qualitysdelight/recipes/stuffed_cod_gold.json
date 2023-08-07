@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:kelp_gold"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_gold"
+    },
+    {
+      "item": "qualitycrops:cod_gold"
+    },
+    {
+      "item": "farmersdelight:rope"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_cod_gold"
+  }
+}

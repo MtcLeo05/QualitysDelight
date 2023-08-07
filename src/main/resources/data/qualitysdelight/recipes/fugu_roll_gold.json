@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:fugu_slice_gold"
+    },
+    {
+      "item": "qualitysdelight:fugu_slice_gold"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fugu_roll_gold"
+  }
+}
