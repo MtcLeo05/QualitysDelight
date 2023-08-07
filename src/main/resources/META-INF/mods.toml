@@ -66,35 +66,35 @@ description='''${mod_description}'''
 [[dependencies.qualitysdelight]]
    modId="farmersdelight"
    mandatory=true
-   versionRange="[1.18, 1.19)"
+   versionRange="[1.19, 1.20)"
    ordering="NONE"
    side="BOTH"#
 
 [[dependencies.qualitysdelight]]
    modId="qualitycrops"
    mandatory=true
-   versionRange="[1.0.0, 2)"
+   versionRange="[1.0.2, 2)"
    ordering="NONE"
    side="BOTH"#
 
 [[dependencies.qualitysdelight]]
    modId="bookshelf"
    mandatory=true
-   versionRange="[13.3.56, 14)"
+   versionRange="[16.3.20, 17)"
    ordering="NONE"
    side="BOTH"#
 
 [[dependencies.qualitysdelight]]
    modId="nethersdelight"
    mandatory=false
-   versionRange="[2.2, 3)"
+   versionRange="[1.19, 1.20)"
    ordering="BEFORE"
    side="BOTH"#
 
 [[dependencies.qualitysdelight]]
    modId="oceansdelight"
    mandatory=false
-   versionRange="[1.0.0-1.18.2, 1.19)"
+   versionRange="[1.0.2-1.19.2, 1.20)"
    ordering="BEFORE"
    side="BOTH"#
 

@@ -34,6 +34,9 @@ public class OceanItems {
         registerExistingQualityFood("tentacle_on_a_stick", OCEAN_QUALITY, ODFoods.TENTACLE_ON_A_STICK, false, OceanCreativeTab.OCEAN_ITEMS);
         registerExistingQualityFood("baked_tentacle_on_a_stick", OCEAN_QUALITY, ODFoods.BAKED_TENTACLE_ON_A_STICK, false, OceanCreativeTab.OCEAN_ITEMS);
         registerExistingQualityFood("cabbage_wrapped_elder_guardian", OCEAN_QUALITY, ODFoods.CABBAGE_WRAPPED_ELDER_GUARDIAN, false, OceanCreativeTab.OCEAN_ITEMS);
+        registerExistingQualityFood("stuffed_cod", OCEAN_QUALITY, ODFoods.STUFFED_COD, false, OceanCreativeTab.OCEAN_ITEMS);
+        registerExistingQualityFood("cooked_stuffed_cod", OCEAN_QUALITY, ODFoods.COOKED_STUFFED_COD, false, OceanCreativeTab.OCEAN_ITEMS);
+        registerExistingQualityFood("honey_fried_kelp", OCEAN_QUALITY, ODFoods.HONEY_FRIED_KELP, false, OceanCreativeTab.OCEAN_ITEMS);
         registerExistingQualityFood("braised_sea_pickle", OCEAN_QUALITY, ODFoods.BRAISED_SEA_PICKLE, true, OceanCreativeTab.OCEAN_ITEMS);
 
         GUARDIAN_SOUP_BOWL = registerFeastItem(OCEAN_QUALITY, "bowl_of_guardian_soup", ODFoods.BOWL_OF_GUARDIAN_SOUP,OceanCreativeTab.OCEAN_ITEMS);

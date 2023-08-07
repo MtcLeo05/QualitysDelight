@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.mtcleo05.qualitysdelight.block.DelightBlocks;
 import com.mtcleo05.qualitysdelight.item.DelightItems;
 import com.mtcleo05.qualitysdelight.integration.ModIntegrationCheck;
+import com.mtcleo05.qualitysdelight.loot.DelightLootModifiers;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +29,8 @@ public class QualitysDelight {
 
         DelightBlocks.register(modEventBus);
         DelightItems.register(modEventBus);
+        DelightLootModifiers.register(modEventBus);
+
         ModIntegrationCheck.preInit(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
