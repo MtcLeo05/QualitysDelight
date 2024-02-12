@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "farmersrespite:item/green_tea_leaves",
+    "layer1": "qualitycrops:item/iron_overlay"
+  }
+}

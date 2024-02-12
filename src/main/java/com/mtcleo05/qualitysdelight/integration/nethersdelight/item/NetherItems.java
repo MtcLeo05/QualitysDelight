@@ -2,14 +2,14 @@ package com.mtcleo05.qualitysdelight.integration.nethersdelight.item;
 
 import com.mtcleo05.qualitycrops.rarities.ModRarities;
 import com.mtcleo05.qualitysdelight.QualitysDelight;
+import com.nethersdelight.common.item.MagmaGelatinItem;
+import com.nethersdelight.core.utility.NDFoods;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import umpaz.nethersdelight.common.item.MagmaGelatinItem;
-import umpaz.nethersdelight.common.utility.NDFoods;
 
 import static com.mtcleo05.qualitysdelight.item.DelightItems.*;
 

@@ -1,0 +1,24 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "farmersrespite:green_tea_leaves"
+      ]
+    }
+  ],
+  "type": "qualitycrops:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "farmersrespite:tea_bush",
+      "properties": {
+        "half": "lower",
+        "age": "0"
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:green_tea_leaves_iron",
+  "goldItem": "qualitysdelight:green_tea_leaves_gold",
+  "diamondItem": "qualitysdelight:green_tea_leaves_diamond"
+}

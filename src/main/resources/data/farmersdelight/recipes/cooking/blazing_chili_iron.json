@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "qualitysdelight:coffee_beans_iron"
+    },
+    {
+      "tag": "forge:iron/raw_beef"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:blazing_chili_iron"
+  }
+}

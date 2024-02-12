@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitycrops:dough_diamond"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitysdelight:raw_pasta_diamond"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

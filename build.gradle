@@ -130,7 +130,7 @@ mixin {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    maven { url 'https://dvs1.progwml6.com/files/maven/'}
+    maven { url 'maven.blamejared.com'}
     maven { url 'https://modmaven.dev' }
     maven {
         url "https://cursemaven.com"
@@ -152,18 +152,16 @@ dependencies {
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation fg.deobf("curse.maven:bookshelf-228525:4556697")
-    implementation fg.deobf("curse.maven:botanypots-353928:4514735")
-    implementation fg.deobf("curse.maven:appleskin-248787:3872808")
+    implementation fg.deobf("curse.maven:bookshelf-228525:4556713")
+    implementation fg.deobf("curse.maven:botany-pots-353928:4711512")
+    implementation fg.deobf("curse.maven:appleskin-248787:3927564")
+    implementation fg.deobf("curse.maven:jei-238222:4593548")
 
-    compileOnly fg.deobf("mezz.jei:jei-1.19.2-forge-api:11.6.0.1016")
-    compileOnly fg.deobf("mezz.jei:jei-1.19.2-common-api:11.6.0.1016")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-forge:11.6.0.1016")
-
-    implementation fg.deobf("curse.maven:farmers-delight-398521:4636013")
-    implementation fg.deobf("curse.maven:nethers-delight-496394:3971576")
-    implementation fg.deobf("curse.maven:oceans-delight-841262:4652058")
-    implementation fg.deobf("curse.maven:quality-crops-892509:4667172")
+    implementation fg.deobf("curse.maven:farmers-delight-398521:4679315")
+    implementation fg.deobf("curse.maven:nethers-delight-496394:3756127")
+    implementation fg.deobf("curse.maven:oceans-delight-841262:4462935")
+    implementation fg.deobf("curse.maven:farmers-respite-551453:3859156")
+    implementation fg.deobf("curse.maven:quality-crops-892509:4769902")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

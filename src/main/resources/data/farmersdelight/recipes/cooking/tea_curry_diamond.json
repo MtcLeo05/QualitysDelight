@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:yellow_tea_leaves_diamond"
+    },
+    {
+      "item": "qualitysdelight:yellow_tea_leaves_diamond"
+    },
+    {
+      "tag": "forge:diamond/raw_chicken"
+    },
+    {
+      "tag": "forge:diamond/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    },
+    {
+      "item": "qualitysdelight:rice_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:tea_curry_diamond"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:wheat_diamond"
+    },
+    {
+      "item": "qualitysdelight:green_tea_leaves_diamond"
+    },
+    {
+      "item": "qualitycrops:wheat_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:green_tea_cookie_diamond"
+  }
+}

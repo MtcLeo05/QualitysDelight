@@ -1,0 +1,15 @@
+{
+  "type": "qualitycrops:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "farmersdelight:cabbages",
+      "properties": {
+        "age": "7"
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:cabbage_iron",
+  "goldItem": "qualitysdelight:cabbage_gold",
+  "diamondItem": "qualitysdelight:cabbage_diamond"
+}

@@ -18,11 +18,6 @@ public class NetherCreativeTab {
         public @NotNull ItemStack makeIcon() {
             return new ItemStack(getItemFromID("hoglin_loin_iron", NetherItems.NETHER_QUALITY));
         }
-
-        @Override
-        public @NotNull Component getDisplayName() {
-            return Component.translatable("itemGroup.qualitysdelight.nether_items");
-        }
     };
 
     public static Item getItemFromID(String id, DeferredRegister<Item> register){

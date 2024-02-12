@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:gold/cooked_fishes/cod"
+    },
+    {
+      "item": "qualitysdelight:green_tea_leaves_gold"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "forge:gold/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:black_cod_gold"
+  }
+}

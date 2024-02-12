@@ -1,5 +1,6 @@
 package com.mtcleo05.qualitysdelight.integration;
 
+import com.mtcleo05.qualitysdelight.integration.farmersrespite.FarmersRespiteIntegration;
 import com.mtcleo05.qualitysdelight.integration.nethersdelight.NethersDelightIntegration;
 import com.mtcleo05.qualitysdelight.integration.oceansdelight.OceansDelightIntegration;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -9,6 +10,7 @@ public class ModIntegrationCheck {
 
     public static boolean nethersDelightPresent = false;
     public static boolean oceansDelightPresent = false;
+    public static boolean farmersRespitePresent = false;
 
     public static void preInit(IEventBus eventBus){
         if(checkMod("nethersdelight")){
@@ -17,6 +19,10 @@ public class ModIntegrationCheck {
 
         if(checkMod("oceansdelight")){
             oceansDelightPreInit(eventBus);
+        }
+
+        if(checkMod("farmersrespite")){
+            farmersRespitePreInit(eventBus);
         }
     }
 
@@ -32,6 +38,13 @@ public class ModIntegrationCheck {
 
         oceansDelightPresent = true;
         OceansDelightIntegration.register(eventBus);
+    }
+
+    public static void farmersRespitePreInit(IEventBus eventBus){
+        System.out.println("Farmer's Respite Found!");
+
+        farmersRespitePresent = true;
+        FarmersRespiteIntegration.register(eventBus);
     }
 
 

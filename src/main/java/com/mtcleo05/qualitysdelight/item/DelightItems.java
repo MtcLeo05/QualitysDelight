@@ -402,13 +402,11 @@ public class DelightItems {
         registerExistingQualityFoodBowlWithEffects("ratatouille", QUALITY_DELIGHT, DelightFoods.RATATOUILLE, DelightCreativeTab.ITEMS);
 
 
-
+        //Must do this way, as the FeastBlock requires access to the registry object
         ROAST_CHICKEN = registerFeastItem(QUALITY_DELIGHT, "roast_chicken", DelightFoods.ROAST_CHICKEN, DelightCreativeTab.ITEMS);
         STUFFED_PUMPKIN = registerFeastItem(QUALITY_DELIGHT, "stuffed_pumpkin", DelightFoods.STUFFED_PUMPKIN, DelightCreativeTab.ITEMS);
         SHEPHERDS_PIE = registerFeastItem(QUALITY_DELIGHT, "shepherds_pie", DelightFoods.SHEPHERDS_PIE, DelightCreativeTab.ITEMS);
         HONEY_GLAZED_HAM = registerFeastItem(QUALITY_DELIGHT, "honey_glazed_ham", DelightFoods.HONEY_GLAZED_HAM, DelightCreativeTab.ITEMS);
-
-        //Must do this way, as the FeastBlock requires access to the registry object
 
         COD_ROLL = registerFeastItem(QUALITY_DELIGHT, "cod_roll", FoodValues.COD_ROLL, DelightCreativeTab.ITEMS);
         SALMON_ROLL = registerFeastItem(QUALITY_DELIGHT, "salmon_roll", FoodValues.SALMON_ROLL, DelightCreativeTab.ITEMS);
@@ -427,6 +425,7 @@ public class DelightItems {
                         new Item.Properties()
                                 .tab(tab)
                                 .rarity(ModRarities.IRON)
+                                .craftRemainder(Items.BOWL)
                                 .food(new FoodProperties.Builder()
                                         .nutrition(Math.round(foodProperties.getNutrition() * 1.25f))
                                         .saturationMod(foodProperties.getSaturationModifier() * 1.25f)
@@ -439,6 +438,7 @@ public class DelightItems {
                         new Item.Properties()
                                 .tab(tab)
                                 .rarity(ModRarities.GOLD)
+                                .craftRemainder(Items.BOWL)
                                 .food(new FoodProperties.Builder()
                                         .nutrition(Math.round(foodProperties.getNutrition() * 1.5f))
                                         .saturationMod(foodProperties.getSaturationModifier() * 1.5f)
@@ -451,6 +451,7 @@ public class DelightItems {
                         new Item.Properties()
                                 .tab(tab)
                                 .rarity(ModRarities.DIAMOND)
+                                .craftRemainder(Items.BOWL)
                                 .food(new FoodProperties.Builder()
                                         .nutrition(Math.round(foodProperties.getNutrition() * 2f))
                                         .saturationMod(foodProperties.getSaturationModifier() * 2f)
@@ -469,6 +470,7 @@ public class DelightItems {
                         new Item.Properties()
                                 .tab(tab)
                                 .rarity(ModRarities.IRON)
+                                .craftRemainder(Items.BOWL)
                                 .food(foodProperties[0]),
                         1
                 ));
@@ -478,6 +480,7 @@ public class DelightItems {
                         new Item.Properties()
                                 .tab(tab)
                                 .rarity(ModRarities.GOLD)
+                                .craftRemainder(Items.BOWL)
                                 .food(foodProperties[1]),
                         2
                 ));
@@ -487,6 +490,7 @@ public class DelightItems {
                         new Item.Properties()
                                 .tab(tab)
                                 .rarity(ModRarities.DIAMOND)
+                                .craftRemainder(Items.BOWL)
                                 .food(foodProperties[2]),
                         3
                 ));
