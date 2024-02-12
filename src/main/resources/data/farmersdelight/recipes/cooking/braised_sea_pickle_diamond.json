@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "minecraft:sea_pickle"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_diamond"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:braised_sea_pickle_diamond"
+  }
+}

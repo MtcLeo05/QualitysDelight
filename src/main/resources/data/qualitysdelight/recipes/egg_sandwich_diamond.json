@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_diamond"
+    },
+    {
+      "item": "qualitysdelight:fried_egg_diamond"
+    },
+    {
+      "item": "qualitysdelight:fried_egg_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:egg_sandwich_diamond"
+  }
+}

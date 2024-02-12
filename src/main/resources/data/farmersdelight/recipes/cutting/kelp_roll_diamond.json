@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:kelp_roll_diamond"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "qualitysdelight:kelp_roll_slice_diamond"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:rice_panicle_iron"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:rice_panicle"
+  }
+}

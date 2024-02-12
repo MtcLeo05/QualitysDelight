@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitycrops:beef_gold"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitysdelight:minced_beef_gold"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

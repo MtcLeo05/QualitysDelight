@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "qualitycrops:iron/cooked_fishes/cod"
+    },
+    {
+      "item": "qualitysdelight:green_tea_leaves_iron"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "qualitycrops:iron/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:black_cod_iron"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:clam_iron"
+    }
+  ],
+  "result": {
+    "item": "crabbersdelight:clam"
+  }
+}

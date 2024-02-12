@@ -1,0 +1,23 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "farmersrespite:coffee_berries"
+      ]
+    }
+  ],
+  "type": "qualitycrops:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "farmersrespite:coffee_stem_middle",
+      "properties": {
+        "age": "2"
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:coffee_berries_iron",
+  "goldItem": "qualitysdelight:coffee_berries_gold",
+  "diamondItem": "qualitysdelight:coffee_berries_diamond"
+}

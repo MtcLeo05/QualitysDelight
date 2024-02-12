@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:yellow_tea_leaves_iron"
+    },
+    {
+      "item": "qualitysdelight:yellow_tea_leaves_iron"
+    },
+    {
+      "tag": "qualitycrops:iron/raw_chicken"
+    },
+    {
+      "tag": "qualitycrops:iron/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "item": "qualitysdelight:rice_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:tea_curry_iron"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:mite_crust_diamond"
+    }
+  ],
+  "result": {
+    "item": "farmersrespite:mite_crust"
+  }
+}

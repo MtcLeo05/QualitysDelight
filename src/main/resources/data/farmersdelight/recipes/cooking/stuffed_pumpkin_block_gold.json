@@ -1,0 +1,48 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:pumpkin"
+  },
+  "cookingtime": 20,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:rice_gold"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_gold"
+    },
+    {
+      "item": "qualitycrops:potato_gold"
+    },
+    {
+      "tag": "qualitycrops:gold/berries"
+    },
+    [
+      {
+        "item": "qualitycrops:carrot_gold"
+      },
+      {
+        "item": "qualitycrops:potato_gold"
+      },
+      {
+        "item": "qualitycrops:beetroot_gold"
+      },
+      {
+        "item": "qualitysdelight:tomato_gold"
+      },
+      {
+        "item": "qualitysdelight:cabbage_gold"
+      },
+      {
+        "item": "qualitysdelight:onion_gold"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_pumpkin_block_gold"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:tentacles_gold"
+    }
+  ],
+  "result": {
+    "item": "oceansdelight:tentacles"
+  }
+}

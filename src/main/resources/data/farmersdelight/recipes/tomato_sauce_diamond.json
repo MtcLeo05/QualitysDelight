@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 300,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    },
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:tomato_sauce_diamond"
+  }
+}

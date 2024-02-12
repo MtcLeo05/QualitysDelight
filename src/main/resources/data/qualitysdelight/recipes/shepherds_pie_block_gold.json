@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:baked_potato_gold"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "qualitycrops:baked_potato_gold"
+    },
+    {
+      "tag": "qualitycrops:gold/cooked_mutton"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:shepherds_pie_block_gold"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "qualitycrops:red_mushroom_gold"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:nether_wart_sourdough_gold"
+  }
+}

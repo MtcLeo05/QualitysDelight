@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "qualitycrops:wheat_diamond"
+    },
+    {
+      "item": "qualitycrops:wheat_diamond"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "qualitysdelight:honey_cookie_diamond"
+  }
+}

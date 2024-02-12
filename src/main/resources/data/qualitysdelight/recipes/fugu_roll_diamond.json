@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:fugu_slice_diamond"
+    },
+    {
+      "item": "qualitysdelight:fugu_slice_diamond"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fugu_roll_diamond"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "qualitycrops:diamond/raw_fishes/cod"
+    },
+    {
+      "item": "qualitycrops:potato_diamond"
+    },
+    {
+      "item": "qualitycrops:egg_diamond"
+    },
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:baked_cod_stew_diamond"
+  }
+}

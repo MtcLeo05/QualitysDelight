@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "endersdelight:shulker_bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "endersdelight:enderman_loot"
+    },
+    {
+      "item": "qualitysdelight:mite_crust_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:endermite_stew_gold"
+  }
+}

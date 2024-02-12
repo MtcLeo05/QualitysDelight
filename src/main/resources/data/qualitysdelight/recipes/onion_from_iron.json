@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:onion_iron"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:onion"
+  }
+}

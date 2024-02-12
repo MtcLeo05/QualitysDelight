@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "farmersrespite:item/blazing_chili",
+    "layer1": "qualitycrops:item/iron_overlay"
+  }
+}

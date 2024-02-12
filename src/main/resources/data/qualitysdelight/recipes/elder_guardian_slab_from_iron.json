@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:elder_guardian_slab_iron"
+    }
+  ],
+  "result": {
+    "item": "oceansdelight:elder_guardian_slab"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:kelp_roll_slice_iron"
+    },
+    {
+      "item": "qualitysdelight:kelp_roll_slice_iron"
+    },
+    {
+      "item": "qualitysdelight:kelp_roll_slice_iron"
+    },
+    {
+      "item": "qualitysdelight:salmon_roll_iron"
+    },
+    {
+      "item": "qualitysdelight:salmon_roll_iron"
+    },
+    {
+      "item": "qualitysdelight:salmon_roll_iron"
+    },
+    {
+      "item": "qualitysdelight:cod_roll_iron"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:cod_roll_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:rice_roll_medley_block_iron"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:rice_iron"
+    },
+    {
+      "item": "qualitycrops:egg_iron"
+    },
+    {
+      "item": "qualitycrops:carrot_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fried_rice_iron"
+  }
+}

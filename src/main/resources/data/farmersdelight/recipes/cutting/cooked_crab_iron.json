@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_crab_iron"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "qualitysdelight:crab_leg_iron"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

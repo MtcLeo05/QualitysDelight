@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_diamond"
+    },
+    {
+      "tag": "qualitycrops:diamond/cooked_mutton"
+    },
+    {
+      "tag": "qualitycrops:diamond/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:mutton_wrap_diamond"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredients": [
+    [
+      {
+        "item": "qualitycrops:chicken_iron"
+      },
+      {
+        "item": "qualitysdelight:chicken_cuts_iron"
+      }
+    ],
+    {
+      "item": "qualitycrops:carrot_iron"
+    },
+    {
+      "tag": "qualitycrops:iron/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:carrot_iron"
+      },
+      {
+        "item": "qualitycrops:potato_iron"
+      },
+      {
+        "item": "qualitycrops:beetroot_iron"
+      },
+      {
+        "item": "qualitysdelight:onion_iron"
+      },
+      {
+        "item": "qualitysdelight:tomato_iron"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:chicken_soup_iron"
+  }
+}

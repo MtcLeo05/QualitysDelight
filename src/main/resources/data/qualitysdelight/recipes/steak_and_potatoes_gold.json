@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:baked_potato_gold"
+    },
+    {
+      "item": "qualitycrops:cooked_beef_gold"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:steak_and_potatoes_gold"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": "qualitysdelight resources",
+    "pack_format": 10,
+    "qualitycrops:resource_pack_format": 9,
+    "qualitycrops:data_pack_format": 10
+  }
+}

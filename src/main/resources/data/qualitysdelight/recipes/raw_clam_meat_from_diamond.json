@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:raw_clam_meat_diamond"
+    }
+  ],
+  "result": {
+    "item": "crabbersdelight:raw_clam_meat"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitycrops:brown_mushroom_gold"
+    },
+    {
+      "item": "qualitycrops:red_mushroom_gold"
+    },
+    {
+      "item": "qualitysdelight:rice_gold"
+    },
+    [
+      {
+        "item": "qualitycrops:carrot_gold"
+      },
+      {
+        "item": "qualitycrops:potato_gold"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:mushroom_rice_gold"
+  }
+}

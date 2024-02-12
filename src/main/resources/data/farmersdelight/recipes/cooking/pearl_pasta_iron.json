@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "endersdelight:shulker_bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "endersdelight:enderman_loot"
+    },
+    {
+      "item": "qualitysdelight:raw_pasta_iron"
+    },
+    {
+      "item": "endersdelight:chorus_juice"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:pearl_pasta_iron"
+  }
+}

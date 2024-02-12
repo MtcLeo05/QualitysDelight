@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "endersdelight:shulker_bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:shulker_mollusk_gold"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "qualitysdelight:rice_gold"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_shulker_gold"
+  }
+}

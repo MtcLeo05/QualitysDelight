@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:raw_pasta_diamond"
+    },
+    {
+      "item": "qualitysdelight:fried_egg_diamond"
+    },
+    {
+      "item": "qualitycrops:dried_kelp_diamond"
+    },
+    {
+      "tag": "qualitycrops:diamond/raw_pork"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:noodle_soup_diamond"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "qualitycrops:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "farmersdelight:rice_panicles",
+      "properties": {
+        "age": "3"
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:rice_panicle_iron",
+  "goldItem": "qualitysdelight:rice_panicle_gold",
+  "diamondItem": "qualitysdelight:rice_panicle_diamond"
+}

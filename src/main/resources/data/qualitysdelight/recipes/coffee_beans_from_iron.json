@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:coffee_beans_iron"
+    }
+  ],
+  "result": {
+    "item": "farmersrespite:coffee_beans"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "qualitycrops:diamond/cooked_fishes/cod"
+    },
+    {
+      "item": "qualitysdelight:green_tea_leaves_diamond"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "qualitycrops:diamond/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:black_cod_diamond"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "qualitycrops:iron/raw_fishes"
+    },
+    {
+      "item": "qualitysdelight:tomato_sauce_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fish_stew_iron"
+  }
+}

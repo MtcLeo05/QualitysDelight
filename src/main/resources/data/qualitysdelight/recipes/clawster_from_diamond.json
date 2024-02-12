@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:clawster_diamond"
+    }
+  ],
+  "result": {
+    "item": "crabbersdelight:clawster"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:smoked_ham_iron"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:smoked_ham"
+  }
+}

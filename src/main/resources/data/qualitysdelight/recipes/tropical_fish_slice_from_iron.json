@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:tropical_fish_slice_iron"
+    }
+  ],
+  "result": {
+    "item": "crabbersdelight:tropical_fish_slice"
+  }
+}

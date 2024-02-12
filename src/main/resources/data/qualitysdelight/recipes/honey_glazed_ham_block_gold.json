@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "qualitysdelight:ham_gold"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_gold"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:honey_glazed_ham_block_gold"
+  }
+}

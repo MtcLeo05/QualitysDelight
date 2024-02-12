@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:guardian_gold"
+    }
+  ],
+  "result": {
+    "item": "oceansdelight:guardian"
+  }
+}

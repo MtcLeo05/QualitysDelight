@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "qualitysdelight:cooked_clam_meat_diamond"
+      },
+      {
+        "item": "qualitysdelight:cooked_crab_diamond"
+      },
+      {
+        "item": "qualitysdelight:cooked_clawster_diamond"
+      },
+      {
+        "item": "qualitysdelight:cooked_shrimp_diamond"
+      }
+    ],
+    {
+      "item": "qualitycrops:baked_potato_diamond"
+    },
+    {
+      "item": "qualitycrops:cooked_beef_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:surf_and_turf_diamond"
+  }
+}

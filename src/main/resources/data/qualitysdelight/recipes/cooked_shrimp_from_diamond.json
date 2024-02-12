@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_shrimp_diamond"
+    }
+  ],
+  "result": {
+    "item": "crabbersdelight:cooked_shrimp"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredients": [
+    [
+      {
+        "item": "qualitycrops:beef_diamond"
+      },
+      {
+        "item": "qualitysdelight:minced_beef_diamond"
+      }
+    ],
+    {
+      "item": "qualitycrops:carrot_diamond"
+    },
+    {
+      "item": "qualitycrops:potato_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:beef_stew_diamond"
+  }
+}

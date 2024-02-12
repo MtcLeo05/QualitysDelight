@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mtcleo05.qualitysdelight.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "QualitysDelight.refmap.json",
+  "mixins": [
+    "TomatoVineMixin",
+    "PropelplantBerryCaneMixin",
+    "PropelplantBerryStemMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

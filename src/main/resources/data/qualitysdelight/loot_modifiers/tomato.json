@@ -1,0 +1,15 @@
+{
+  "type": "qualitycrops:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "farmersdelight:tomatoes",
+      "properties": {
+        "age": "3"
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:tomato_iron",
+  "goldItem": "qualitysdelight:tomato_gold",
+  "diamondItem": "qualitysdelight:tomato_diamond"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:clam_diamond"
+    }
+  ],
+  "result": [
+    {
+      "item": "qualitysdelight:raw_clam_meat_diamond"
+    },
+    {
+      "item": "crabbersdelight:pearl"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitycrops:chicken_gold"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitysdelight:chicken_cuts_gold"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

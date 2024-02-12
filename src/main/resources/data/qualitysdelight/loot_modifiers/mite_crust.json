@@ -1,0 +1,34 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "endersdelight:mite_crust"
+      ]
+    }
+  ],
+  "type": "qualitycrops:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "killer",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "tag": "farmersdelight:tools/knives"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:endermite"
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:mite_crust_iron",
+  "goldItem": "qualitysdelight:mite_crust_gold",
+  "diamondItem": "qualitysdelight:mite_crust_diamond"
+}

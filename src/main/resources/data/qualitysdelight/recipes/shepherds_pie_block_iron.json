@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:baked_potato_iron"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "qualitycrops:baked_potato_iron"
+    },
+    {
+      "tag": "qualitycrops:iron/cooked_mutton"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:shepherds_pie_block_iron"
+  }
+}

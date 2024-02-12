@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "endersdelight:shulker_bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "endersdelight:enderman_sight"
+    },
+    [
+      {
+        "item": "qualitysdelight:shulker_mollusk_diamond"
+      },
+      {
+        "item": "qualitysdelight:shulker_filet_diamond"
+      }
+    ],
+    {
+      "item": "minecraft:chorus_flower"
+    },
+    {
+      "item": "qualitysdelight:rice_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:ender_paella_diamond"
+  }
+}

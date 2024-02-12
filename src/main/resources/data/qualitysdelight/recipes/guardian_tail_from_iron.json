@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:guardian_tail_iron"
+    }
+  ],
+  "result": {
+    "item": "oceansdelight:guardian_tail"
+  }
+}

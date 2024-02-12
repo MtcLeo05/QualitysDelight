@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_clam_meat_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "item": "qualitycrops:potato_iron"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:clam_chowder_iron"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:shulker_mollusk_diamond"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitysdelight:shulker_filet_diamond"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

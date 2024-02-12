@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    [
+      {
+        "item": "qualitysdelight:mutton_chops_diamond"
+      },
+      {
+        "item": "qualitycrops:mutton_diamond"
+      }
+    ],
+    {
+      "item": "qualitysdelight:raw_pasta_diamond"
+    },
+    {
+      "item": "qualitysdelight:tomato_sauce_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:pasta_with_mutton_chop_diamond"
+  }
+}

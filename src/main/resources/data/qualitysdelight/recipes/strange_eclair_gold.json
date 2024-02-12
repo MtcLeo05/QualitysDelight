@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "item": "qualitycrops:wheat_gold"
+    },
+    {
+      "item": "qualitycrops:wheat_gold"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:strange_eclair_gold"
+  }
+}

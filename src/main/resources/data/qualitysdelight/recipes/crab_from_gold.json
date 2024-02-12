@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:crab_gold"
+    }
+  ],
+  "result": {
+    "item": "crabbersdelight:crab"
+  }
+}

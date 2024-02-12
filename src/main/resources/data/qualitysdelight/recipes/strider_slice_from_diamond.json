@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:strider_slice_diamond"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:strider_slice"
+  }
+}

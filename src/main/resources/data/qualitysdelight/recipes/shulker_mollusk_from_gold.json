@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:shulker_mollusk_gold"
+    }
+  ],
+  "result": {
+    "item": "farmersrespite:shulker_mollusk"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:mite_crust_diamond"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "qualitycrops:wheat_diamond"
+    },
+    {
+      "item": "qualitycrops:wheat_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:uncanny_cookies_diamond"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:hoglin_sirloin_iron"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:hoglin_sirloin"
+  }
+}

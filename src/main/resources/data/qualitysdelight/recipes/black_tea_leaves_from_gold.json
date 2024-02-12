@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:black_tea_leaves_gold"
+    }
+  ],
+  "result": {
+    "item": "farmersrespite:black_tea_leaves"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "qualitysdelight:tropical_fish_slice_iron"
+  },
+  "result": "qualitysdelight:cooked_tropical_fish_slice_iron"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "farmersdelight:item/noodle_soup",
+    "layer1": "qualitycrops:item/iron_overlay"
+  }
+}

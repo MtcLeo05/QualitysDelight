@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:shulker_mollusk_iron"
+    }
+  ],
+  "result": {
+    "item": "farmersrespite:shulker_mollusk"
+  }
+}

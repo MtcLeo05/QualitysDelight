@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "endersdelight:item/crawling_sandwich",
+    "layer1": "qualitycrops:item/diamond_overlay"
+  }
+}

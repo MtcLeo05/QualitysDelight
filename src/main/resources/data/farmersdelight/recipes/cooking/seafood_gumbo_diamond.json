@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_clawster_diamond"
+    },
+    {
+      "item": "qualitysdelight:cooked_shrimp_diamond"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    },
+    {
+      "item": "qualitysdelight:rice_diamond"
+    },
+    {
+      "item": "qualitycrops:porkchop_diamond"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:seafood_gumbo_diamond"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:wheat_iron"
+    },
+    {
+      "item": "qualitysdelight:green_tea_leaves_iron"
+    },
+    {
+      "item": "qualitycrops:wheat_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:green_tea_cookie_iron"
+  }
+}

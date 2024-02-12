@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_crab_iron"
+    }
+  ],
+  "result": {
+    "item": "crabbersdelight:cooked_crab"
+  }
+}

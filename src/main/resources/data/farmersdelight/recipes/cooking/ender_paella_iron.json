@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "endersdelight:shulker_bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "endersdelight:enderman_sight"
+    },
+    [
+      {
+        "item": "qualitysdelight:shulker_mollusk_iron"
+      },
+      {
+        "item": "qualitysdelight:shulker_filet_iron"
+      }
+    ],
+    {
+      "item": "minecraft:chorus_flower"
+    },
+    {
+      "item": "qualitysdelight:rice_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:ender_paella_iron"
+  }
+}

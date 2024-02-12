@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:yellow_tea_leaves_gold"
+    },
+    {
+      "item": "qualitysdelight:yellow_tea_leaves_gold"
+    },
+    {
+      "tag": "qualitycrops:gold/raw_chicken"
+    },
+    {
+      "tag": "qualitycrops:gold/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitysdelight:rice_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:tea_curry_gold"
+  }
+}

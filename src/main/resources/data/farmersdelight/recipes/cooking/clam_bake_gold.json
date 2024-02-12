@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_clam_meat_gold"
+    },
+    {
+      "item": "qualitysdelight:cooked_clawster_gold"
+    },
+    {
+      "item": "qualitysdelight:cooked_shrimp_gold"
+    },
+    {
+      "item": "minecraft:seagrass"
+    },
+    {
+      "item": "qualitycrops:carrot_gold"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:clam_bake_gold"
+  }
+}

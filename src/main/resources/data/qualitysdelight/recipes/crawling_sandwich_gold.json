@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "qualitysdelight:shulker_mollusk_gold"
+      },
+      {
+        "item": "qualitysdelight:shulker_filet_gold"
+      }
+    ],
+    {
+      "item": "qualitysdelight:mite_crust_gold"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "minecraft:bread"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:crawling_sandwich_gold"
+  }
+}

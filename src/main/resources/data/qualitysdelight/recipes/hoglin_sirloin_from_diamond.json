@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:hoglin_sirloin_diamond"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:hoglin_sirloin"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:coffee_berries_gold"
+    }
+  ],
+  "result": {
+    "item": "farmersrespite:coffee_berries"
+  }
+}

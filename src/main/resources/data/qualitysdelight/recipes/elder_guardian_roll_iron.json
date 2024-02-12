@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:elder_guardian_slice_iron"
+    },
+    {
+      "item": "qualitysdelight:elder_guardian_slice_iron"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:elder_guardian_roll_iron"
+  }
+}

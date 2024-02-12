@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:mite_crust_gold"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "qualitycrops:wheat_gold"
+    },
+    {
+      "item": "qualitycrops:wheat_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:uncanny_cookies_gold"
+  }
+}

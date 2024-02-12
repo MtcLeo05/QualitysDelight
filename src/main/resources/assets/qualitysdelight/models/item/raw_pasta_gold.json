@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "farmersdelight:item/raw_pasta",
+    "layer1": "qualitycrops:item/gold_overlay"
+  }
+}

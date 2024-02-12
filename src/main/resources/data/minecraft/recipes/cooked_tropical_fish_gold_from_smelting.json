@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":
+      [
+        "qualitysdelight:cooked_tropical_fish_gold"
+      ]
+    }
+  ],
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "qualitycrops:tropical_fish_gold"
+  },
+  "result": "qualitysdelight:cooked_tropical_fish_gold"
+}
