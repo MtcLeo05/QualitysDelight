@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":
+      [
+        "qualitysdelight:cooked_tropical_fish_diamond"
+      ]
+    }
+  ],
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "qualitycrops:tropical_fish_diamond"
+  },
+  "result": "qualitysdelight:cooked_tropical_fish_diamond"
+}

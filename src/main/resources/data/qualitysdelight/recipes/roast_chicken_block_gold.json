@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitycrops:egg_gold"
+    },
+    {
+      "item": "qualitycrops:bread_gold"
+    },
+    {
+      "item": "qualitycrops:carrot_gold"
+    },
+    {
+      "item": "qualitycrops:cooked_chicken_gold"
+    },
+    {
+      "item": "qualitycrops:baked_potato_gold"
+    },
+    {
+      "item": "qualitycrops:carrot_gold"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitycrops:baked_potato_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:roast_chicken_block_gold"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "item": "qualitycrops:egg_iron"
+    },
+    {
+      "item": "qualitycrops:bread_iron"
+    },
+    {
+      "item": "qualitycrops:carrot_iron"
+    },
+    {
+      "item": "qualitycrops:cooked_chicken_iron"
+    },
+    {
+      "item": "qualitycrops:baked_potato_iron"
+    },
+    {
+      "item": "qualitycrops:carrot_iron"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitycrops:baked_potato_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:roast_chicken_block_iron"
+  }
+}

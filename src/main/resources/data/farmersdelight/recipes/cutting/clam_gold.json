@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:clam_gold"
+    }
+  ],
+  "result": [
+    {
+      "item": "qualitysdelight:raw_clam_meat_gold"
+    },
+    {
+      "chance": 0.75,
+      "item": "crabbersdelight:pearl"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

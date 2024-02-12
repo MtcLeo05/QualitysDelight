@@ -1,0 +1,51 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    [
+      {
+        "item": "qualitysdelight:cooked_clam_meat_iron"
+      },
+      {
+        "item": "qualitysdelight:cooked_crab_iron"
+      },
+      {
+        "item": "qualitysdelight:cooked_clawster_iron"
+      },
+      {
+        "item": "qualitysdelight:cooked_shrimp_iron"
+      },
+      {
+        "item": "qualitysdelight:raw_clam_meat_iron"
+      },
+      {
+        "item": "qualitysdelight:crab_iron"
+      },
+      {
+        "item": "qualitysdelight:clawster_iron"
+      },
+      {
+        "item": "qualitysdelight:shrimp_iron"
+      }
+    ],
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "item": "qualitysdelight:rice_iron"
+    },
+    {
+      "item": "qualitycrops:carrot_iron"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:bisque_iron"
+  }
+}

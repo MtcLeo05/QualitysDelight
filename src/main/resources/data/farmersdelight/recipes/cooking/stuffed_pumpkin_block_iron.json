@@ -1,0 +1,48 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:pumpkin"
+  },
+  "cookingtime": 20,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:rice_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_iron"
+    },
+    {
+      "item": "qualitycrops:potato_iron"
+    },
+    {
+      "tag": "forge:berries"
+    },
+    [
+      {
+        "item": "qualitycrops:carrot_iron"
+      },
+      {
+        "item": "qualitycrops:potato_iron"
+      },
+      {
+        "item": "qualitycrops:beetroot_iron"
+      },
+      {
+        "item": "qualitysdelight:tomato_iron"
+      },
+      {
+        "item": "qualitysdelight:cabbage_iron"
+      },
+      {
+        "item": "qualitysdelight:onion_iron"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_pumpkin_block_iron"
+  }
+}

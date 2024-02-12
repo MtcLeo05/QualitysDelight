@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:guardian_diamond"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    },
+    {
+      "item": "qualitycrops:egg_diamond"
+    },
+    {
+      "item": "qualitycrops:egg_diamond"
+    },
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    },
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:guardian_soup_diamond"
+  }
+}

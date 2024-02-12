@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_clawster_iron"
+    },
+    {
+      "item": "qualitysdelight:cooked_shrimp_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    {
+      "item": "qualitysdelight:rice_iron"
+    },
+    {
+      "item": "qualitycrops:porkchop_iron"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:seafood_gumbo_iron"
+  }
+}

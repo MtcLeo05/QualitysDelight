@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitycrops:carrot_iron"
+    },
+    {
+      "item": "qualitycrops:potato_iron"
+    },
+    {
+      "item": "qualitycrops:beetroot_iron"
+    },
+    {
+      "tag": "qualitycrops:iron/crops/cabbage"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:vegetable_soup_iron"
+  }
+}

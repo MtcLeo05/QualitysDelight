@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:apple_iron"
+    },
+    {
+      "item": "qualitycrops:melon_slice_iron"
+    },
+    {
+      "item": "qualitycrops:melon_slice_iron"
+    },
+    {
+      "tag": "qualitycrops:iron/berries"
+    },
+    {
+      "tag": "qualitycrops:iron/berries"
+    },
+    {
+      "item": "farmersdelight:pumpkin_slice"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fruit_salad_iron"
+  }
+}

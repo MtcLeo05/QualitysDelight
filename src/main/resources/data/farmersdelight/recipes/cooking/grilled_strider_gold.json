@@ -1,0 +1,33 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    [
+      {
+        "item": "qualitysdelight:ground_strider_gold"
+      },
+      {
+        "item": "qualitysdelight:strider_slice_gold"
+      }
+    ],
+    {
+      "item": "minecraft:warped_fungus"
+    },
+    {
+      "item": "minecraft:crimson_fungus"
+    },
+    {
+      "item": "minecraft:warped_roots"
+    },
+    {
+      "item": "minecraft:crimson_roots"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:grilled_strider_gold"
+  }
+}

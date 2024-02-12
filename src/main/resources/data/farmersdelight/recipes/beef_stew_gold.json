@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredients": [
+    [
+      {
+        "item": "qualitycrops:beef_gold"
+      },
+      {
+        "item": "qualitysdelight:minced_beef_gold"
+      }
+    ],
+    {
+      "item": "qualitycrops:carrot_gold"
+    },
+    {
+      "item": "qualitycrops:potato_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:beef_stew_gold"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:fugu_slice_iron"
+    },
+    {
+      "item": "qualitysdelight:fugu_slice_iron"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fugu_roll_iron"
+  }
+}

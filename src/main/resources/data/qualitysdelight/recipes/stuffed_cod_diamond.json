@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:kelp_diamond"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    },
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_diamond"
+    },
+    {
+      "item": "qualitycrops:cod_diamond"
+    },
+    {
+      "item": "farmersdelight:rope"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_cod_diamond"
+  }
+}

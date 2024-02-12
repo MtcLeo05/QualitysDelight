@@ -1,0 +1,58 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitycrops:dough_diamond"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    },
+    {
+      "tag": "qualitycrops:diamond/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:potato_diamond"
+      },
+      {
+        "item": "qualitycrops:carrot_diamond"
+      },
+      {
+        "item": "qualitycrops:beetroot_diamond"
+      },
+      {
+        "item": "qualitycrops:beef_diamond"
+      },
+      {
+        "item": "qualitycrops:porkchop_diamond"
+      },
+      {
+        "item": "qualitycrops:chicken_diamond"
+      },
+      {
+        "item": "qualitycrops:mutton_diamond"
+      },
+      {
+        "item": "qualitycrops:brown_mushroom_diamond"
+      },
+      {
+        "item": "qualitysdelight:minced_beef_diamond"
+      },
+      {
+        "item": "qualitysdelight:chicken_cuts_diamond"
+      },
+      {
+        "item": "qualitysdelight:bacon_diamond"
+      },
+      {
+        "item": "qualitysdelight:mutton_chops_diamond"
+      }
+    ]
+  ],
+  "result": {
+    "count": 2,
+    "item": "qualitysdelight:dumplings_diamond"
+  }
+}

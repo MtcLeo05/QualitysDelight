@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:elder_guardian_slab_diamond"
+    }
+  ],
+  "result": [
+    {
+      "count": 9,
+      "item": "qualitysdelight:elder_guardian_slice_diamond"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

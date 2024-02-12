@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "weight": 70,
+                  "name": "farmersdelight:rice"
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 15,
+                  "name": "qualitysdelight:rice_iron"
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 10,
+                  "name": "qualitysdelight:rice_gold"
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "qualitysdelight:rice_diamond"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmersdelight:rice_panicles",
+                  "properties": {
+                    "age": "3"
+                  }
+                },
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "tag": "farmersdelight:tools/knives"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "weight": 70,
+                  "name": "farmersdelight:rice_panicle"
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 15,
+                  "name": "qualitysdelight:rice_panicle_iron"
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 10,
+                  "name": "qualitysdelight:rice_panicle_gold"
+                },
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "qualitysdelight:rice_panicle_diamond"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmersdelight:rice_panicles",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ]
+}

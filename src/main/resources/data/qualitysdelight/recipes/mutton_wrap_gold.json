@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_gold"
+    },
+    {
+      "tag": "qualitycrops:gold/cooked_mutton"
+    },
+    {
+      "tag": "qualitycrops:gold/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:mutton_wrap_gold"
+  }
+}

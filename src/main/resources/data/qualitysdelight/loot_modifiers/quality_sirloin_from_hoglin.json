@@ -1,0 +1,26 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "nethersdelight:hoglin_sirloin"
+      ]
+    }
+  ],
+  "type": "qualitysdelight:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:hoglin",
+        "flags": {
+          "is_on_fire": true
+        }
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:hoglin_sirloin_iron",
+  "goldItem": "qualitysdelight:hoglin_sirloin_gold",
+  "diamondItem": "qualitysdelight:hoglin_sirloin_diamond"
+}

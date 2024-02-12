@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_iron"
+    },
+    {
+      "item": "qualitysdelight:beef_patty_iron"
+    },
+    {
+      "tag": "qualitycrops:iron/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:tomato_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:hamburger_iron"
+  }
+}

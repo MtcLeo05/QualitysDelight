@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cabbage_leaf_gold"
+    },
+    {
+      "item": "qualitysdelight:cabbage_leaf_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:cabbage_gold"
+  }
+}

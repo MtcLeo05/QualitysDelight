@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "oceansdelight:item/cooked_stuffed_cod",
+    "layer1": "qualitycrops:item/diamond_overlay"
+  }
+}

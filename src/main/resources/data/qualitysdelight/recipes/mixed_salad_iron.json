@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "qualitycrops:iron/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:tomato_iron"
+    },
+    {
+      "item": "qualitycrops:beetroot_iron"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:mixed_salad_iron"
+  }
+}

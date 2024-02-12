@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cabbage_leaf_iron"
+    },
+    {
+      "item": "qualitysdelight:cabbage_leaf_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:cabbage_iron"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:tomato_iron"
+    },
+    {
+      "item": "qualitysdelight:onion_iron"
+    },
+    [
+      {
+        "tag": "qualitycrops:iron/cooked_beef"
+      },
+      {
+        "tag": "qualitycrops:iron/cooked_pork"
+      },
+      {
+        "tag": "qualitycrops:iron/cooked_chicken"
+      },
+      {
+        "tag": "qualitycrops:iron/cooked_mutton"
+      },
+      {
+        "tag": "qualitycrops:iron/cooked_fish"
+      },
+      {
+        "item": "qualitycrops:cooked_rabbit_iron"
+      }
+    ],
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:barbecue_stick_iron"
+  }
+}

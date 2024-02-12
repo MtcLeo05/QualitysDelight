@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "crabbersdelight:item/cooked_shrimp",
+    "layer1": "qualitycrops:item/diamond_overlay"
+  }
+}

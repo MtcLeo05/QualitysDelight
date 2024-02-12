@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:nautilus_shell"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "qualitycrops:gold/cooked_fish"
+    },
+    {
+      "item": "qualitycrops:kelp_gold"
+    },
+    {
+      "item": "qualitycrops:kelp_gold"
+    },
+    {
+      "item": "qualitycrops:kelp_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_nautilus_shell_gold"
+  }
+}

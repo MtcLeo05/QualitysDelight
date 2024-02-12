@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "qualitysdelight:cooked_clam_meat_gold"
+      },
+      {
+        "item": "qualitysdelight:cooked_crab_gold"
+      },
+      {
+        "item": "qualitysdelight:cooked_clawster_gold"
+      },
+      {
+        "item": "qualitysdelight:cooked_shrimp_gold"
+      }
+    ],
+    {
+      "item": "qualitycrops:baked_potato_gold"
+    },
+    {
+      "item": "qualitycrops:cooked_beef_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:surf_and_turf_gold"
+  }
+}

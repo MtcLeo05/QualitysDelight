@@ -1,0 +1,33 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "minecraft:warped_fungus"
+    },
+    {
+      "item": "minecraft:crimson_fungus"
+    },
+    {
+      "item": "minecraft:crimson_roots"
+    },
+    {
+      "item": "minecraft:warped_fungus"
+    },
+    [
+      {
+        "item": "qualitysdelight:ground_strider_gold"
+      },
+      {
+        "item": "qualitysdelight:strider_slice_gold"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:strider_moss_stew_gold"
+  }
+}

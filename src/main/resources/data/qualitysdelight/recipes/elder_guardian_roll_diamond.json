@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:elder_guardian_slice_diamond"
+    },
+    {
+      "item": "qualitysdelight:elder_guardian_slice_diamond"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:elder_guardian_roll_diamond"
+  }
+}

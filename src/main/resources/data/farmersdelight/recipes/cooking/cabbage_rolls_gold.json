@@ -1,0 +1,69 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 300,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "tag": "qualitycrops:gold/crops/cabbage"
+    },
+    [
+      {
+        "item": "qualitycrops:potato_gold"
+      },
+      {
+        "item": "qualitycrops:carrot_gold"
+      },
+      {
+        "item": "qualitycrops:beetroot_gold"
+      },
+      {
+        "item": "qualitycrops:beef_gold"
+      },
+      {
+        "item": "qualitycrops:porkchop_gold"
+      },
+      {
+        "item": "qualitycrops:chicken_gold"
+      },
+      {
+        "item": "qualitycrops:mutton_gold"
+      },
+      {
+        "item": "qualitycrops:egg_gold"
+      },
+      {
+        "item": "qualitycrops:tropical_fish_gold"
+      },
+      {
+        "item": "qualitycrops:salmon_gold"
+      },
+      {
+        "item": "qualitycrops:cod_gold"
+      },
+      {
+        "item": "qualitysdelight:minced_beef_gold"
+      },
+      {
+        "item": "qualitysdelight:chicken_cuts_gold"
+      },
+      {
+        "item": "qualitysdelight:bacon_gold"
+      },
+      {
+        "item": "qualitysdelight:mutton_chops_gold"
+      },
+      {
+        "item": "qualitysdelight:salmon_slice_gold"
+      },
+      {
+        "item": "qualitysdelight:cod_slice_gold"
+      },
+      {
+        "item": "qualitysdelight:hoglin_loin_gold"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:cabbage_rolls_gold"
+  }
+}

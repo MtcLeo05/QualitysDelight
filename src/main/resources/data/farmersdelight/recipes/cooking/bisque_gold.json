@@ -1,0 +1,51 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    [
+      {
+        "item": "qualitysdelight:cooked_clam_meat_gold"
+      },
+      {
+        "item": "qualitysdelight:cooked_crab_gold"
+      },
+      {
+        "item": "qualitysdelight:cooked_clawster_gold"
+      },
+      {
+        "item": "qualitysdelight:cooked_shrimp_gold"
+      },
+      {
+        "item": "qualitysdelight:raw_clam_meat_gold"
+      },
+      {
+        "item": "qualitysdelight:crab_gold"
+      },
+      {
+        "item": "qualitysdelight:clawster_gold"
+      },
+      {
+        "item": "qualitysdelight:shrimp_gold"
+      }
+    ],
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitysdelight:rice_gold"
+    },
+    {
+      "item": "qualitycrops:carrot_gold"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:bisque_gold"
+  }
+}

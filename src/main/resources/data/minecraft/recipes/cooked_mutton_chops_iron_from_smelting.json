@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "qualitysdelight:mutton_chops_iron"
+  },
+  "result": "qualitysdelight:cooked_mutton_chops_iron"
+}

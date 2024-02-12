@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cooked_crab_diamond"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "qualitysdelight:crab_leg_diamond"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions":[
+    {
+      "type":"bookshelf:item_exists",
+      "values":[
+        "oceansdelight:tentacles"
+      ]
+    }
+  ],
+  "type": "qualitysdelight:add_quality",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "killer",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "tag": "farmersdelight:tools/knives"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:squid",
+        "flags": {
+          "is_on_fire": false
+        }
+      }
+    }
+  ],
+  "ironItem": "qualitysdelight:tentacles_iron",
+  "goldItem": "qualitysdelight:tentacles_gold",
+  "diamondItem": "qualitysdelight:tentacles_diamond"
+}

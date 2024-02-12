@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "qualitycrops:carrot_gold"
+    },
+    {
+      "item": "qualitycrops:potato_gold"
+    },
+    {
+      "item": "qualitycrops:beetroot_gold"
+    },
+    {
+      "tag": "qualitycrops:gold/crops/cabbage"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:vegetable_soup_gold"
+  }
+}

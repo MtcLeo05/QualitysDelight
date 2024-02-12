@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "qualitysdelight:cooked_clam_meat_iron"
+      },
+      {
+        "item": "qualitysdelight:cooked_crab_iron"
+      },
+      {
+        "item": "qualitysdelight:cooked_clawster_iron"
+      },
+      {
+        "item": "qualitysdelight:cooked_shrimp_iron"
+      }
+    ],
+    {
+      "item": "qualitycrops:baked_potato_iron"
+    },
+    {
+      "item": "qualitycrops:cooked_beef_iron"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:surf_and_turf_iron"
+  }
+}

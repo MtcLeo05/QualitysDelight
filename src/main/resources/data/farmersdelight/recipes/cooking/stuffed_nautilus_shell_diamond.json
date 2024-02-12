@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:nautilus_shell"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "qualitycrops:diamond/cooked_fish"
+    },
+    {
+      "item": "qualitycrops:kelp_diamond"
+    },
+    {
+      "item": "qualitycrops:kelp_diamond"
+    },
+    {
+      "item": "qualitycrops:kelp_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:stuffed_nautilus_shell_diamond"
+  }
+}

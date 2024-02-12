@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_diamond"
+    },
+    {
+      "item": "qualitysdelight:beef_patty_diamond"
+    },
+    {
+      "tag": "qualitycrops:diamond/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:tomato_diamond"
+    },
+    {
+      "item": "qualitysdelight:onion_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:hamburger_diamond"
+  }
+}

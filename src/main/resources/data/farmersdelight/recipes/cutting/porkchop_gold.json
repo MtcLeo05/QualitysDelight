@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitycrops:porkchop_gold"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitysdelight:bacon_gold"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

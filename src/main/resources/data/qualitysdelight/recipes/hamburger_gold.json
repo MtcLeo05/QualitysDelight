@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_gold"
+    },
+    {
+      "item": "qualitysdelight:beef_patty_gold"
+    },
+    {
+      "tag": "qualitycrops:gold/crops/cabbage"
+    },
+    {
+      "item": "qualitysdelight:tomato_gold"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:hamburger_gold"
+  }
+}

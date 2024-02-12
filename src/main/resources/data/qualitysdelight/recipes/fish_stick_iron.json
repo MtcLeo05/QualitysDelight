@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "tag": "qualitycrops:iron/cooked_fish"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:fish_stick_iron"
+  }
+}

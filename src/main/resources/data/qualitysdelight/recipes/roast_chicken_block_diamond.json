@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:onion_diamond"
+    },
+    {
+      "item": "qualitycrops:egg_diamond"
+    },
+    {
+      "item": "qualitycrops:bread_diamond"
+    },
+    {
+      "item": "qualitycrops:carrot_diamond"
+    },
+    {
+      "item": "qualitycrops:cooked_chicken_diamond"
+    },
+    {
+      "item": "qualitycrops:baked_potato_diamond"
+    },
+    {
+      "item": "qualitycrops:carrot_diamond"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "qualitycrops:baked_potato_diamond"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:roast_chicken_block_diamond"
+  }
+}

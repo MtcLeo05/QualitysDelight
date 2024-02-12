@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:strider_slice_gold"
+    }
+  ],
+  "result": [
+    {
+      "item": "qualitysdelight:ground_strider_gold",
+      "count": 2
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

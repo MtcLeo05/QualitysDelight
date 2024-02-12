@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:cabbage_gold"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "qualitysdelight:cabbage_leaf_gold"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

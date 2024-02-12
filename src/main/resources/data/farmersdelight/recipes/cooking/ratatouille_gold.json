@@ -1,0 +1,42 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitysdelight:tomato_gold"
+    },
+    {
+      "item": "qualitysdelight:onion_gold"
+    },
+    {
+      "item": "qualitycrops:beetroot_gold"
+    },
+    [
+      {
+        "item": "qualitycrops:carrot_gold"
+      },
+      {
+        "item": "qualitycrops:potato_gold"
+      },
+      {
+        "item": "qualitycrops:potato_gold"
+      },
+      {
+        "item": "qualitysdelight:tomato_gold"
+      },
+      {
+        "item": "qualitysdelight:cabbage_gold"
+      },
+      {
+        "item": "qualitysdelight:onion_gold"
+      }
+    ]
+  ],
+  "result": {
+    "item": "qualitysdelight:ratatouille_gold"
+  }
+}

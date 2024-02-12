@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_gold"
+    },
+    {
+      "tag": "qualitycrops:gold/cooked_chicken"
+    },
+    {
+      "tag": "qualitycrops:gold/crops/cabbage"
+    },
+    {
+      "item": "qualitycrops:carrot_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:chicken_sandwich_gold"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitysdelight:salmon_slice_diamond"
+    },
+    {
+      "item": "qualitysdelight:salmon_slice_diamond"
+    },
+    {
+      "item": "qualitysdelight:cooked_rice_diamond"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "qualitysdelight:salmon_roll_diamond"
+  }
+}

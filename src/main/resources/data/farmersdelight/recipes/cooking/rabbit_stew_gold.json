@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "qualitycrops:baked_potato_gold"
+    },
+    {
+      "item": "qualitycrops:rabbit_gold"
+    },
+    {
+      "item": "qualitycrops:carrot_gold"
+    },
+    {
+      "item": "qualitycrops:brown_mushroom_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitycrops:rabbit_stew_gold"
+  }
+}

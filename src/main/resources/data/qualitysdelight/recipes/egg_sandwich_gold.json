@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "qualitycrops:bread_gold"
+    },
+    {
+      "item": "qualitysdelight:fried_egg_gold"
+    },
+    {
+      "item": "qualitysdelight:fried_egg_gold"
+    }
+  ],
+  "result": {
+    "item": "qualitysdelight:egg_sandwich_gold"
+  }
+}

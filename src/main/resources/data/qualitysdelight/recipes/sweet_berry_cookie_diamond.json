@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "qualitycrops:wheat_diamond"
+    },
+    {
+      "item": "qualitycrops:wheat_diamond"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "qualitysdelight:sweet_berry_cookie_diamond"
+  }
+}

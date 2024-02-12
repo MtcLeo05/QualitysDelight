@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "qualitysdelight:chicken_cuts_diamond"
+  },
+  "result": "qualitysdelight:cooked_chicken_cuts_diamond"
+}
